@@ -14,7 +14,7 @@ Here's some instructions for getting ready for the SGB 2023 charity event for Th
 	c. Click "Submit"
 6. Get to know a little about the charity we're supporting so you can talk it up. See "Talking Points" if you need something to get the juices flowing, but you should try to know a few things that the talking points can refresh in your mind's eye.
 7. Try to be around to help coordinate the switchovers. Check the schedule, check that the next streamer is live and ensure they're ready for the raid, then report to the active streamer that the target is ready for the switchover. If there are multiple people talk amongst yourselves to voluntell one of you to handle it so we don't have multiple people trying to do the same thing.
-8. REALLY try to help with the switchovers. Things like streamers being late/offline/having technical difficulties at the last minute can happen, and it will be bad if the active streamer has to try to coordinate that themselves. If someone is truly unavailable at the last minute, try to find and coordinate with another showciety streamer who is using the charity overlay to raid into as a backup.
+9. REALLY try to help with the switchovers. Things like streamers being late/offline/having technical difficulties at the last minute can happen, and it will be bad if the active streamer has to try to coordinate that themselves. If someone is truly unavailable at the last minute, try to find and coordinate with another showciety streamer who is using the charity overlay to raid into as a backup.
 
 # OBS Setup
 
@@ -24,11 +24,11 @@ Before opening OBS Studio make sure to right click the SMM2 font "super-mario-ma
 
 ## Importing Scene Collection
 
-To simplify the setup we've included an exported scene collection (SGB_2023 for OBS.json). To use this in OBS Studio click "Scene Collection" in the top menu, click Import, the import dialogue should open, click the three dots in the "Collection Path" box, select the JSON file and click the "Import" button.
+To simplify the setup we've included an exported scene collection (SGB24.json). To use this in OBS Studio click "Scene Collection" in the top menu, click Import, the import dialogue should open, click the three dots in the "Collection Path" box, select the JSON file and click the "Import" button.
 
 ## Finding Missing Files
 
-Once you import the scene collection you can then click on "Scene Collection" in the top bar and select "SGB 2023" to load the scene collection (do not do this live as OBS may crash). You will get a dialogue titled "Missing Files" to point OBS to the location all the image and audio assets are stored. Since we've put all the files necessary in this zip file you just have to click "Search Directory..." and browse to where you extracted this to. Once all the files have a new file in the "New File" column you can click "Apply".
+Once you import the scene collection you can then click on "Scene Collection" in the top bar and select "SGB24" to load the scene collection (do not do this live as OBS may crash). You will get a dialogue titled "Missing Files" to point OBS to the location all the image and audio assets are stored. Since we've put all the files necessary in this zip file you just have to click "Search Directory..." and browse to where you extracted this to. Once all the files have a new file in the "New File" column you can click "Apply".
 
 ## Streamlabs OBS (SLOBS) Setup
 
@@ -38,43 +38,40 @@ Once you have completed "Importing Scene Collection" and "Finding Missing Files"
 
 ## Required Customizations
 
-We have created four "Live" scenes called "Live (16:9 Left)", "Live (16:9 Right)", "Live (4:3 Left)" and "Live (4:3 Right)" for 16:9 and 4:3 games with the camera on the left or right according to your preference. You can remove ones you don't plan on using and optionally rename the remaining one(s) (e.g. "Live").
+We have created six "Live" scenes called "Live 16:9 Left", "Live 16:9 Right", "Live 8:7 Left", "Live 8:7 Right", "Live 4:3 Left" and "Live 4:3 Right" for 16:9, 8:7 (i.e. SNES Emulator) and 4:3 (i.e. SNES hardware) games with the camera on the left or right according to your preference. You can remove ones you don't plan on using and optionally rename the remaining one(s) (e.g. "Live").
 
 You will need to edit the sources to change text, match your devices or add your preferred filters (e.g. Cropping, Chroma Key or audio filters like compressor, expander, etc...).
 
 We have added multiple types of video/audio sources for ease of use and you probably will not require ALL of them. Sources you don't plan to use such as "Application Audio Capture (BETA)", "Display Capture" or "Audio Output Capture" (i.e. Desktop Audio) can and should be REMOVED. You will definitely need to modify the sources you do use at least a little bit such as cropping your camera, adding chroma key, adding an audio compressor filter, etc... We won't cover the specifics here other than to say you might need to edit it.
 
 Sources you will likely need to edit or remove:
-* Streamer Name
-* Game Name
-* Camera
-* Game Capture
-* Display Capture
-* Video Capture Device
-* Application Audio Capture (BETA)
-* Audio Output capture
-* Mic
+* Streamer Name Source
+* Pronouns Source
+* Game Name Source
+* Webcam Camera Source
+* Game Capture Source
+* Display Capture Source
+* Capture Card Source
+* Desktop Audio
+* Mic Source
 
 You will also need to go into Edit > "Advanced Audio Properties" and set the "Audio Monitoring" and "Tracks" columns to work with your audio setup.
 
-Depending on your setup you may need to add your own audio sources or remove all of ours. There are too many combinations to list for a general guide.
+Depending on your setup you may need to add your own audio sources and/or remove all of ours. There are too many combinations to list for a general guide.
 
 We can try to help if you're having trouble in the #sgb23-setup-help channel for specific setups.
 
-## Suggested Customizations
+## Suggested Optional Customizations
 
 You are not limited to ONLY these changes, but these are here as a jumping off point.
 
 * Resize the game to fit the game area. We've added a transform to the game sources that tries to do a good job of doing this, but it may not meet your needs. Feel free to modify them or delete them and add your own. NOTE: SLOBS does not import the transform so this will likely be required if you use SLOBS.
+* Adding your own alert sources
 * Crop/Resize your camera, add any filters you need, etc...
 * Add audio filters if you prefer.
-* Change text outlines:
-    * YELLOW - #FFF600
-    * WHITE - #FFFFFF
-    * DARK YELLOW - #907a01
-    * GREY - #2b2b2b
+* Change starting / BRB / ending music. We have provided three audio files to choose from, but you may use your own choice of royalty-free music.
 * Transitions
-* Picture to put in place of camera for non-camera strimmers
+* Picture/Rig to put in place of camera for non-camera strimmers
 
 ## HOT TIP
 
@@ -84,45 +81,44 @@ Do a recording, try all the scenes, speak a bit and try to play the game for a f
 
 If your mind blanks while you're live and you need some talking points, we got you. Here are some talking points you can OPTIONALLY bring up that may cause people to want to donate.
 
-* LGBTQ young people are four times more likely to attempt suicide. Every day, LGBTQ young people reach out for mental health support. When you donate to Trevor, you ensure volunteers can continue to be there for them.
-* Trevor provides DIRECT suicide prevention and crisis intervention services to support via phone, text, and chat.
-* Trevor fights for policies and laws that protect LGBTQ youth.
-* Trevor does research and evaluations that significantly improve their services.
-* Trevor provides the world's largest safe-space social networking community.
-* Trevor educates and creates public awareness around issues relevant to LGBTQ youth and allies.
+* "Veterans are our mission. Gaming is our passion." Stack Up bridges veterans and civilians through a shared love of gaming, helping veterans through programs like Stacks, Supply Crates, Air Assaults, and their Stack Up Overwatch Program [StOP].
+* Stacks are teams of local volunteers around the globe using gaming and other activities to connect to their communities in order to create a weclome and supporting environment for veterans.
+* Supply Crates are video game care packages full of the latest games, gear and console sent to deployed units and veterans in need.
+* Air Assaults are all expenses paid trips for veterans to attend life-changing video game and geek culture events such as PAX, ComicCon, TwitchCon, etc...
+* StOP: Stack Up's Overwatch Program (StOP) offers peer-to-peer support via Discord, focusing on crisis intervention for gamers, providing a safe space to talk and get help.
+* Gaming as therapy: Stack Up uses video games as a powerful tool to combat PTSD, depression, and isolation, offering veterans much-needed community, support, and mental health resources.
+* What Does 'Stack Up' mean? In military terms, a stack is a formation used during room clearing. For Stack Up, it represents a community coming together to support veterans through the love of gaming.
+* Why gaming? For many veterans, gaming provides relief, a sense of connection, and a way to manage the challenges of reintegrating into civilian life. It's more than just a hobby - it's therapy.
 
 # Pre-Charity-Stream Checklist:
 
-Start your stream at least 5 minutes before your slot is scheduled to begin so that you're ready to go when it's time.
+Start your stream at least **5 minutes** before your slot is scheduled to begin so that you're ready to go when it's time.
 
 1. Make sure your overlay looks ok. Power up the game and do a *test recording* or a *test stream* to make sure audio is working properly.
 2. Ensure follower/sub only chat is DISABLED so all viewers are allowed to chat.
 3. REMOVE all donation links that aren't for the charity from your twitch panels and bots (e.g. commands, timers).
-4. Add Twitch's "Charity" tag to your stream for the duration of the event.
-5. Keep the charity donations list open so you can read donations aloud: https://tiltify.com/+smm-showciety/showciety-gives-back-2023/donations?scopeKey=c2hvd2NpZXR5LWdpdmVzLWJhY2stMjAyMw==
+4. Add Twitch's "Charity" tag to your stream for your streams.
+5. Keep the charity donations list open so you can read donations aloud: https://tiltify.com/+smm-showciety/showciety-gives-back-2024/donations
 	HOT TIP: This URL can be added as a Custom Browser Dock in OBS Studio!
 6. Get to know the people before and after your slot so that you can welcome/introduce them.
-7. Be ready to go a little longer if the streamer after you has an issue. It's not ideal, but I'm sure you'd like someone to have your back like this if you had issues starting.
+7. Be ready to go a little longer if the streamer after you has an issue. It's not ideal, but I'm sure you'd like someone to have your back like this if you had issues starting. You won't be expected to fill another time slot if someone ends up not being able to make it, but if you want to you can volunteer.
 
 Stream as you usually would, encouraging donations and talking up the cause (See "Talking Points" if you get stuck). Read out the donation messages as much as you can.
 
-When you have confirmation that the next person on the schedule (https://horaro.org/sgb2023/schedule) is ready for the switchover, give them a little intro and then raid into their stream.
+When you have confirmation that the next person on the [schedule](https://horaro.org/sgb2024/schedule) is ready for the switchover, give them a little intro and then raid into their stream.
 
 # Bot Commands
 
-!donate - You can donate to The Trevor Project at www.showciety.gives
+* !donate - You can donate to Stack Up at www.showciety.gives
+* !schedule - Want to know who's streaming for the charity? You can find the full schedule here: horaro.org/sgb-2024/schedule
+* !charity - Founded in 2015, Stack Up www.stackup.org/ brings both veterans and civilian supporters together through a shared love of video gaming through our primary programs: The Stacks, Supply Crates, Air Assaults, and the Stack Up Overwatch Program [StOP].
+* !stackup - Stack Up helps US and Allied military service members get through deployments to combat zones and recover from traumatic physical and emotional injuries with the power of video gaming.
+* !incentives - (list your incentives here - see below for common incentive ideas) 
+* !showciety - The SMM Showciety is a community of Super Mario Maker streamers, builders, viewers, and players! To get involved with the Showciety, check out our Discord discord.gg/skNMmDe and X x.com/smmshowciety Thanks for your support!
 
-!schedule - Want to know who's streaming for the charity? You can find the full schedule here! horaro.org/sgb2023/schedule
+# Indirect donations
 
-!charity - The Trevor Project (www.thetrevorproject.org) is the world’s largest suicide prevention and mental health organization for lesbian, gay, bisexual, transgender, queer, and questioning (LGBTQ) young people. Your donations have a direct impact on their ability to provide life-saving counseling services to LGBTQ young people.
-
-!incentives - (list your incentives here - see below for common incentive ideas)
-
-!legislation - The Trevor Project's advocacy programs span the country, and include various types of legislation and education. They have passed 30 bills in the last 10 years, and have fathered 25 different movements, such as "Protecting with Pride".
-
-!showciety - The SMM Showciety is a community of Super Mario Maker streamers, builders, viewers, and players! To get involved with the Showciety, check out our Discord discord.gg/skNMmDe and Twitter twitter.com/smmshowciety . Thanks for your support!
-
-!trevor - Did you know that one accepting adult decreases the risk of suicide by 40% for LGBTQ young people. The Trevor Project provides LGBTQ youth with 24/7 crisis counseling via phone, text, and chat. Head to www.thetrevorproject.org/get-help if you, or anybody you know may need help.
+To ensure absolute transparency with our viewers, to instill trust with our charity partners, and to avoid unnecessary costs and unduly expectations of our streamers, the Super Mario Showciety Mod team has decided that all Streamers moving forward will only accept donations during charity events via the approved means (i.e. Tiltify). At no time should streamers be handling funds that are meant for our charity partners, this means that streamers shall not encourage their viewers to donate to the charity via bits, subs, or tipping to their channel. If you have any questions, please do not hesitate to reach out via @Mod or DM.
 
 # Donation Incentive Ideas
 
@@ -240,18 +236,8 @@ Crowd Control is an incentive itself! You don't technically need any other incen
 
 ### Crowd Control Charity Campaign Setup
 
-We will not be covering how to set up Crowd Control for games. Crowd Control has many articles on how to set up individual games. We are only covering how to link to our charity campaign.
+Stack Up does not currently support Crowd Control. If you wish to do a Crowd Control stream you will be responsible for tracking money spent on Crowd Control and sending it to the charity. We will not be covering how to set up Crowd Control for games. Crowd Control has many articles on how to set up individual games.
 
-1. Install Crowd Control (https://crowdcontrol.live/) by downlaoding and running the installer with the big red "Download" button in the top right.
-2. Log in to the app.
-3. Go to Config > Charity in the menu on the left of the app.
-4. Enter the following campaign ID in the "Enter Campaign by ID" box: c28d1a42-dd41-4d70-aec3-f306e450f145
-5. Click the little paper airplane button to initate the link.
-6. The "Showciety Gives Back 2023" campaign should show up under "Manage your Charity Campaign".
-7. Set up your game following Crowd Control's instructions: https://crowdcontrol.live/games/
+# Final Notes
 
-Once you've linked your account to the campaign the coin purchases through Crowd Control should go to Tiltify and count towards our amount raised for The Trevor Project!
-
-Once the event is over don't forget to click on the red "Unlink" button in the botom right if you plan on doing Crowd Control for yourself later!
-
-If you are having trouble with anything we will do our best to help in the #sgb23-setup-help channel.
+If you are having trouble with anything we will do our best to help in the [#sgb24-setup-help channel](https://discord.com/channels/475693157720522752/1284990295016079430).
