@@ -120,6 +120,9 @@ When you have confirmation that the next person on the [schedule](https://horaro
 
 To ensure absolute transparency with our viewers, to instill trust with our charity partners, and to avoid unnecessary costs and unduly expectations of our streamers, the Super Mario Showciety Mod team has decided that all Streamers moving forward will only accept donations during charity events via the approved means (i.e. Tiltify). At no time should streamers be handling funds that are meant for our charity partners, this means that streamers shall not encourage their viewers to donate to the charity via bits, subs, or tipping to their channel. If you have any questions, please do not hesitate to reach out via @Mod or DM.
 
+# Crowd Control
+Sadly Crowd Control does not support our charity this year. It is not recommended to stream Crowd Control for the event.
+
 # Donation Incentive Ideas
 
 Here are some common donation incentives in no particular order.
@@ -227,16 +230,6 @@ Here are some common donation incentives in no particular order.
     * Costumed Dancing (i.e. Chicken Dance in a Chicken Suit)
     * Get a new Tattoo
     * Do a Bob Ross Tutorial
-* Crowd Control (See "Crowd Control" below)
-    * Switch to a different, harder game or a game you hate for X time units
-
-## Crowd Control
-
-Crowd Control is an incentive itself! You don't technically need any other incentives for a Crowd Control stream, but don't limit yourself if you don't want to. Incentives above and beyond are NOT required, but they can also be a lot of fun!
-
-### Crowd Control Charity Campaign Setup
-
-Stack Up does not currently support Crowd Control. If you wish to do a Crowd Control stream you will be responsible for tracking money spent on Crowd Control and sending it to the charity. We will not be covering how to set up Crowd Control for games. Crowd Control has many articles on how to set up individual games.
 
 # Final Notes
 
