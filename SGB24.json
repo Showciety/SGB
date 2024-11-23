@@ -60,9 +60,9 @@
             "name": "Stack Up Stinger",
             "id": "obs_stinger_transition",
             "settings": {
+                "audio_monitoring": 2,
                 "path": "C:/SGB/Stack Up Stinger.mov",
                 "transition_point": 1500,
-                "audio_monitoring": 2,
                 "hw_decode": false
             }
         }
@@ -77,257 +77,6 @@
     "scaling_off_y": 0.0,
     "virtual-camera": {
         "type2": 3
-    },
-    "modules": {
-        "cloud_closed_caption_rat": {
-            "enabled": false,
-            "streaming_output_enabled": true,
-            "recording_output_enabled": false,
-            "caption_line_count": 3,
-            "caption_insert_newlines": false,
-            "caption_insert_punctuation": false,
-            "caption_capitalization": 0,
-            "source_language": "en-US",
-            "profanity_filter": 0,
-            "caption_timeout_enabled": true,
-            "caption_timeout_secs": 15.0,
-            "word_replacements": [],
-            "source_caption_when": "own_source",
-            "source_name": "",
-            "mute_source_name": "",
-            "text_source_outputs": [],
-            "transcript_enabled": false,
-            "transcript_for_stream_enabled": true,
-            "transcript_for_recording_enabled": true,
-            "transcript_for_virtualcam_enabled": true,
-            "transcript_folder_path": "",
-            "transcript_format": "srt",
-            "transcript_recording_name_type": "recording",
-            "transcript_recording_name_custom": "",
-            "transcript_recording_name_exists": "append",
-            "transcript_streaming_name_type": "datetime",
-            "transcript_streaming_name_custom": "",
-            "transcript_streaming_name_exists": "append",
-            "transcript_virtualcam_name_type": "datetime",
-            "transcript_virtualcam_name_custom": "",
-            "transcript_virtualcam_name_exists": "append",
-            "transcript_srt_target_duration_secs": 8,
-            "transcript_srt_target_line_length": 44,
-            "transcript_srt_add_punctuation": true,
-            "transcript_srt_split_single_sentences": false,
-            "transcript_srt_capitalization": 0,
-            "plugin_version": "0.28"
-        },
-        "scripts-tool": [],
-        "output-timer": {
-            "streamTimerHours": 0,
-            "streamTimerMinutes": 0,
-            "streamTimerSeconds": 30,
-            "recordTimerHours": 0,
-            "recordTimerMinutes": 0,
-            "recordTimerSeconds": 30,
-            "autoStartStreamTimer": false,
-            "autoStartRecordTimer": false,
-            "pauseRecordTimer": true
-        },
-        "auto-scene-switcher": {
-            "interval": 300,
-            "non_matching_scene": "",
-            "switch_if_not_matching": false,
-            "active": false,
-            "switches": []
-        },
-        "captions": {
-            "source": "",
-            "enabled": false,
-            "lang_id": 1033,
-            "provider": "mssapi"
-        },
-        "advanced-scene-switcher": {
-            "sceneGroups": [],
-            "macros": [],
-            "macroProperties": {
-                "highlightExecuted": false,
-                "highlightConditions": false,
-                "highlightActions": false,
-                "newMacroRegisterHotkey": false
-            },
-            "variables": [],
-            "switches": [],
-            "ignoreWindows": [],
-            "screenRegion": [],
-            "pauseEntries": [],
-            "sceneRoundTrip": [],
-            "sceneTransitions": [],
-            "defaultTransitions": [],
-            "defTransitionDelay": 0,
-            "ignoreIdleWindows": [],
-            "idleTargetType": 0,
-            "idleSceneName": "",
-            "idleTransitionName": "",
-            "idleEnable": false,
-            "idleTime": 60,
-            "executableSwitches": [],
-            "randomSwitches": [],
-            "fileSwitches": [],
-            "readEnabled": false,
-            "readPath": "",
-            "writeEnabled": false,
-            "writePath": "",
-            "mediaSwitches": [],
-            "timeSwitches": [],
-            "audioSwitches": [],
-            "audioFallbackTargetType": 0,
-            "audioFallbackScene": "",
-            "audioFallbackTransition": "",
-            "audioFallbackEnable": false,
-            "audioFallbackDuration": {
-                "value": {
-                    "value": 0.0,
-                    "type": 0
-                },
-                "unit": 0,
-                "version": 1
-            },
-            "videoSwitches": [],
-            "ServerEnabled": false,
-            "ServerPort": 55555,
-            "LockToIPv4": false,
-            "ClientEnabled": false,
-            "Address": "",
-            "ClientPort": 55555,
-            "SendSceneChange": true,
-            "SendSceneChangeAll": true,
-            "SendPreview": true,
-            "triggers": [],
-            "interval": 300,
-            "non_matching_scene": "",
-            "switch_if_not_matching": 0,
-            "noMatchDelay": {
-                "value": {
-                    "value": 0.0,
-                    "type": 0
-                },
-                "unit": 0,
-                "version": 1
-            },
-            "cooldown": {
-                "value": {
-                    "value": 0.0,
-                    "type": 0
-                },
-                "unit": 0,
-                "version": 1
-            },
-            "active": true,
-            "startup_behavior": 0,
-            "autoStartEvent": 0,
-            "logLevel": 0,
-            "showSystemTrayNotifications": false,
-            "disableHints": false,
-            "disableFilterComboboxFilter": false,
-            "warnPluginLoadFailure": true,
-            "hideLegacyTabs": true,
-            "priority0": 10,
-            "priority1": 0,
-            "priority2": 2,
-            "priority3": 8,
-            "priority4": 6,
-            "priority5": 9,
-            "priority6": 7,
-            "priority7": 4,
-            "priority8": 1,
-            "priority9": 5,
-            "priority10": 3,
-            "threadPriority": 3,
-            "transitionOverrideOverride": false,
-            "adjustActiveTransitionType": true,
-            "lastImportPath": "",
-            "startHotkey": [],
-            "stopHotkey": [],
-            "toggleHotkey": [],
-            "upMacroSegmentHotkey": [],
-            "downMacroSegmentHotkey": [],
-            "removeMacroSegmentHotkey": [],
-            "tabWidgetOrder": [
-                {
-                    "generalTab": 0
-                },
-                {
-                    "macroTab": 1
-                },
-                {
-                    "windowTitleTab": 2
-                },
-                {
-                    "executableTab": 3
-                },
-                {
-                    "screenRegionTab": 4
-                },
-                {
-                    "mediaTab": 5
-                },
-                {
-                    "fileTab": 6
-                },
-                {
-                    "randomTab": 7
-                },
-                {
-                    "timeTab": 8
-                },
-                {
-                    "idleTab": 9
-                },
-                {
-                    "sceneSequenceTab": 10
-                },
-                {
-                    "audioTab": 11
-                },
-                {
-                    "videoTab": 12
-                },
-                {
-                    "networkTab": 13
-                },
-                {
-                    "sceneGroupTab": 14
-                },
-                {
-                    "transitionsTab": 15
-                },
-                {
-                    "pauseTab": 16
-                },
-                {
-                    "sceneTriggerTab": 17
-                },
-                {
-                    "websocketConnectionTab": 18
-                },
-                {
-                    "twitchConnectionTab": 19
-                },
-                {
-                    "variableTab": 20
-                },
-                {
-                    "actionQueueTab": 21
-                }
-            ],
-            "saveWindowGeo": false,
-            "windowPosX": 0,
-            "windowPosY": 0,
-            "windowWidth": 0,
-            "windowHeight": 0,
-            "macroListMacroEditSplitterPosition": [],
-            "version": "7cc44b44700a88ee7552ad56eb0809d436652454",
-            "websocketConnections": [],
-            "twitchConnections": [],
-            "actionQueues": []
-        }
     },
     "resolution": {
         "x": 1920,
@@ -551,8 +300,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 3,
                 "custom_size": false,
+                "id_counter": 3,
                 "items": [
                     {
                         "name": "Music Media Source",
@@ -744,17 +493,17 @@
             "id": "dshow_input",
             "versioned_id": "dshow_input",
             "settings": {
-                "video_device_id": "ezcap U3 capture-04:\\\\?\\usb#22vid_1bcf&pid_0b10&mi_00#229&29c5bc9&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
-                "last_video_device_id": "ezcap U3 capture-04:\\\\?\\usb#22vid_1bcf&pid_0b10&mi_00#229&29c5bc9&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
-                "resolution": "640x480",
-                "last_resolution": "640x480",
                 "buffering": 2,
+                "last_resolution": "640x480",
+                "last_video_device_id": "ezcap U3 capture-04:\\\\?\\usb#22vid_1bcf&pid_0b10&mi_00#229&29c5bc9&3&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "resolution": "640x480",
+                "video_device_id": "ezcap U3 capture-04:\\\\?\\usb#22vid_1bcf&pid_0b10&mi_00#229&29c5bc9&3&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
                 "frame_interval": 166666,
-                "res_type": 1,
+                "res_type": 0,
                 "video_format": 301,
                 "active": true,
-                "color_space": "709",
-                "color_range": "partial"
+                "color_space": "default",
+                "color_range": "default"
             },
             "mixers": 255,
             "sync": 0,
@@ -818,15 +567,15 @@
             "name": "Commands Source",
             "uuid": "48c19bc0-af93-491b-8216-d4980655d579",
             "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
+            "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": true,
                 "text": "!donate !schedule !charity !stackup !incentives !showciety ",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 48,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "outline_size": 5,
                 "outline_color": 4278190080
@@ -856,7 +605,7 @@
                     "versioned_id": "scroll_filter",
                     "settings": {
                         "limit_cx": true,
-                        "speed_x": 24.0,
+                        "speed_x": 24,
                         "cx": 1920
                     },
                     "mixers": 0,
@@ -942,8 +691,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 3,
                 "custom_size": false,
+                "id_counter": 3,
                 "items": [
                     {
                         "name": "Music Media Source",
@@ -1167,15 +916,15 @@
             "name": "Game Name Source",
             "uuid": "0372d912-4dcc-4027-b8be-56cff92c1566",
             "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
+            "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": true,
                 "text": "Game: Super Mario World",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 64,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "outline_size": 6,
                 "outline_color": 4278190080
@@ -1204,8 +953,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 18,
                 "custom_size": false,
+                "id_counter": 18,
                 "items": [
                     {
                         "name": "Desktop Audio Source",
@@ -1891,8 +1640,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 18,
                 "custom_size": false,
+                "id_counter": 18,
                 "items": [
                     {
                         "name": "Desktop Audio Source",
@@ -2578,8 +2327,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 17,
                 "custom_size": false,
+                "id_counter": 17,
                 "items": [
                     {
                         "name": "Desktop Audio Source",
@@ -3265,8 +3014,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 18,
                 "custom_size": false,
+                "id_counter": 18,
                 "items": [
                     {
                         "name": "Desktop Audio Source",
@@ -3952,8 +3701,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 18,
                 "custom_size": false,
+                "id_counter": 18,
                 "items": [
                     {
                         "name": "Desktop Audio Source",
@@ -4639,8 +4388,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 19,
                 "custom_size": false,
+                "id_counter": 19,
                 "items": [
                     {
                         "name": "Desktop Audio Source",
@@ -5395,7 +5144,7 @@
                     "id": "compressor_filter",
                     "versioned_id": "compressor_filter",
                     "settings": {
-                        "threshold": -40.0
+                        "threshold": -40
                     },
                     "mixers": 255,
                     "sync": 0,
@@ -5456,15 +5205,15 @@
             "name": "Pronouns Source",
             "uuid": "ef379338-88cd-49b7-9cee-630ddc7d038e",
             "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
+            "versioned_id": "text_gdiplus_v2",
             "settings": {
-                "text": "Pronouns: He/Him",
                 "outline": true,
+                "text": "Pronouns: He/Him",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 36,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "outline_size": 4,
                 "outline_color": 4278190080
@@ -5545,8 +5294,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 3,
                 "custom_size": false,
+                "id_counter": 3,
                 "items": [
                     {
                         "name": "Music Media Source",
@@ -5736,16 +5485,16 @@
             "name": "Streamer Name Source",
             "uuid": "f4255bd8-240b-4b4c-a70a-1b64dd68850a",
             "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
+            "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": true,
                 "text": "Streamer: tehgoocherer",
                 "undo_uuid": "f4255bd8-240b-4b4c-a70a-1b64dd68850a",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 64,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "outline_size": 6,
                 "outline_color": 4278190080
@@ -5774,16 +5523,16 @@
             "id": "dshow_input",
             "versioned_id": "dshow_input",
             "settings": {
-                "video_device_id": "Logitech StreamCam:\\\\?\\usb#22vid_046d&pid_0893&mi_00#229&2220bf6f&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "buffering": 2,
+                "last_resolution": "1920x1080",
                 "last_video_device_id": "Logitech StreamCam:\\\\?\\usb#22vid_046d&pid_0893&mi_00#229&2220bf6f&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
                 "resolution": "1920x1080",
-                "last_resolution": "1920x1080",
-                "buffering": 2,
+                "video_device_id": "Logitech StreamCam:\\\\?\\usb#22vid_046d&pid_0893&mi_00#229&2220bf6f&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
                 "frame_interval": 166666,
-                "res_type": 1,
+                "res_type": 0,
                 "video_format": 400,
-                "color_space": "709",
-                "color_range": "partial"
+                "color_space": "default",
+                "color_range": "default"
             },
             "mixers": 255,
             "sync": 0,
@@ -5805,39 +5554,7 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
-            "private_settings": {},
-            "filters": [
-                {
-                    "prev_ver": 503447555,
-                    "name": "Crop/Pad",
-                    "uuid": "389cbe14-1f0c-4f84-b19a-34aa53955dba",
-                    "id": "crop_filter",
-                    "versioned_id": "crop_filter",
-                    "settings": {
-                        "left": 560,
-                        "top": 240,
-                        "cx": 800,
-                        "cy": 600,
-                        "relative": false
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": true,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                }
-            ]
+            "private_settings": {}
         }
     ]
 }
