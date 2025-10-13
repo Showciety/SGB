@@ -130,13 +130,22 @@ Download the app from [Crowd Control's website](https://crowdcontrol.live/). Ins
 
 Game setup is *the* hardest part of Crowd Control. Crowd Control has instructions for every game they support. You can access the game list [here](https://crowdcontrol.live/games/). Once you have selected your game there should be a linke on the left titled "Game Setup Guide". Again, we're happy to try to help in [#sgb25-setup-help](https://discord.com/channels/475693157720522752/1427377014247129283) if you are having trouble.
 
-## Crowd Control Discord
+## Crowd Control Overlay
 
-Crowd Control also has a [Discord server](https://discord.warp.world/) that they also offer help through if we are unable to fix your problem.
+Crowd Control provides a browser source overlay that shows what effects are active and who sent them. It's meant to fit over top of the game. You can configure how it looks in the Crowd Control app including transparencies. We've included pre-sized browser sources for each aspect ratio for you to paste your overlay URL into. It'll need to be done for each aspect ratio since you can only set one size for an individual browser source.
+
+You can find your URL in the Crowd Control app under "Overlay & Assets". Paste it as the URL for one or more of the pre-sized browser sources in their respective scenes:
+* 16:9 Crowd Control Overlay Source
+* 8:7 Crowd Control Overlay Source
+* 4:3 Crowd Control Overlay Source
 
 ## Set Up Charity Donations
 
 In the Crowd Control app go to "Config" -> "Charity" and enter our campaign ID, `a8c73e5a-1760-4d49-864e-2528e5a71c10`, into the "Enter Campaign by ID" box and **click the paper airplane button**. It should come up and show our campaign name: "Showciety Gives back 2025 (SGB25)", part of the description of the campaign and a link to the campaign. If this matches please click "Play for this Charity". Your viewers will now be able to donate for Crowd Control Coins.
+
+## Crowd Control Discord
+
+Crowd Control also has a [Discord server](https://discord.warp.world/) that they also offer help through if we are unable to fix your problem.
 
 # Donation Incentive Ideas
 
