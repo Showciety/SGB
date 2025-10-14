@@ -143,6 +143,8 @@ You can find your URL in the Crowd Control app under "Overlay & Assets". Paste i
 
 In the Crowd Control app go to "Config" -> "Charity" and enter our campaign ID, `a8c73e5a-1760-4d49-864e-2528e5a71c10`, into the "Enter Campaign by ID" box and **click the paper airplane button**. It should come up and show our campaign name: "Showciety Gives back 2025 (SGB25)", part of the description of the campaign and a link to the campaign. If this matches please click "Play for this Charity". Your viewers will now be able to donate for Crowd Control Coins.
 
+**All coins purchased via donation to our Tiltify campaign are shared between all sessions dedicated to that campaign. i.e. Coins purchased by donation during another SGB stream will be usable in your Crowd Control stream for SGB**
+
 ## Crowd Control Discord
 
 Crowd Control also has a [Discord server](https://discord.warp.world/) that they also offer help through if we are unable to fix your problem.
