@@ -5,7 +5,7 @@ Here's some instructions for getting ready for the SGB 2025 charity event for Th
 # Get Ready For The Event
 
 1. Set up OBS for the event. See "OBS Setup". You may have your own flourish, but we would like to try to have a generally consistent "look" for the event.
-2. Make a Tiltify account (or login with Twitch) and request to be part of the team on Tiltify. Once logged in go to the [Super Mario Showciety Team Page](https://tiltify.com/+super-mario-showciety/profile) to request an invite. There is a black "Join team +" button next to the "SMM Showciety on Tiltify" header at the top!
+2. Make a Tiltify account (or login with Twitch) and request to be part of the team on Tiltify. Once logged in go to the [Super Mario Showciety Team Page](https://tiltify.com/+super-mario-showciety/profile) to request an invite. There is a black "Join team +" button next to the "Super Mario Showciety on Tiltify" header at the top!
 3. While **NOT** required we recommend planning donation incentives. See "Donation Incentive Ideas".
 4. Set up bot commands for the links to the charity, donation page, etc. (see "Bot Commands"). Optionally set up timers to periodically post the same messages automatically. Make sure there are no conflicting commands - especially for !donate and !charity!
 5. Optionally set up a panel on your Twitch channel to advertises the event and provides a link to the donation page.
