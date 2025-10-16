@@ -8,7 +8,7 @@ Here's some instructions for getting ready for the SGB 2025 charity event for Th
 
 These steps can be done early and should not affect your regular streams.
 
-1. Set up OBS for the event. See "Stream Seup". Since this is a separate scene collection it shouldn't impact your regular streams. You may have your own flourish, but we would like to try to have a generally consistent "look" for the event. See "[Streamlabs OBS (SLOBS) Notes](#streamlabs-obs-slobs-notes)" if you use SLOBS.
+1. Set up OBS for the event. See "[Stream Setup](#stream-setup)". Since this is a separate scene collection it shouldn't impact your regular streams. You may have your own flourish, but we would like to try to have a generally consistent "look" for the event. See "[Streamlabs OBS (SLOBS) Notes](#streamlabs-obs-slobs-notes)" if you use SLOBS.
 2. Make a Tiltify account (or login with Twitch) and request to be part of the team on Tiltify. Once logged in go to the [Super Mario Showciety Team Page](https://tiltify.com/+super-mario-showciety/profile) to request an invite. There is a black "Join team +" button next to the "Super Mario Showciety on Tiltify" header at the top!
 3. While **NOT** required we recommend planning donation incentives. See "[Donation Incentive Ideas](#donation-incentive-ideas)".
 4. Get to know a little about the charity we're supporting so you can talk it up. See "[Talking Points](#talking-points)" if you need something to get the juices flowing, but you should try to know a few things that the talking points can refresh in your mind's eye.
