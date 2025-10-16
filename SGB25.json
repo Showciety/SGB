@@ -294,7 +294,7 @@
             "name": "16:9 Commands Text Source",
             "uuid": "e7b4055f-5424-41da-a1c9-0a8884de9ef3",
             "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
+            "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "text": "!donate !schedule !charity !incentives !legislation !showciety !trevor",
                 "outline": true,
@@ -394,7 +394,7 @@
             "name": "4:3 Commands Text Source",
             "uuid": "b80add88-3176-4184-b6fb-e01d9558b0d7",
             "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
+            "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "text": "!donate !schedule !charity !incentives !legislation !showciety !trevor",
                 "outline": true,
@@ -494,7 +494,7 @@
             "name": "8:7 Commands Text Source",
             "uuid": "19b99552-3984-44b9-ada3-282bee3464f4",
             "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
+            "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "text": "!donate !schedule !charity !incentives !legislation !showciety !trevor",
                 "outline": true,
@@ -1516,7 +1516,7 @@
             "name": "Game Name Source",
             "uuid": "7ea3b07a-00b2-4fc9-9856-bcdb28a499af",
             "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
+            "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": true,
                 "text": "Game: ",
@@ -9511,7 +9511,7 @@
             "name": "Pronoun Source",
             "uuid": "eed77ac1-743b-45ef-b4e8-430b586ff70c",
             "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
+            "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": true,
                 "text": "(He/Him)",
@@ -9547,7 +9547,7 @@
             "name": "SGB25 Text Source",
             "uuid": "b522fdee-c00a-46c6-9d43-9c4ce79dec67",
             "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
+            "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "text": "Showciety Gives Back\n2025",
                 "outline": true,
@@ -9927,7 +9927,7 @@
             "name": "Streamer Name Source",
             "uuid": "158a1ad2-bbf9-4fef-a408-5938fc03be8a",
             "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
+            "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": true,
                 "text": "Streamer: ",
@@ -10129,7 +10129,7 @@
             "name": "Warning Text Source",
             "uuid": "8a4db375-2a2d-43b5-830f-18e39d3059b5",
             "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
+            "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": true,
                 "font": {
