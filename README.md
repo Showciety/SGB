@@ -96,13 +96,13 @@ You are not limited to ONLY these changes! These are here to give you an idea of
 
 Please set up the following bot commands. It's recommended to do this shortly before your stream so you don't impact your normal setup.
 
-!donate - You can donate to The Trevor Project at www.showciety.gives
-!schedule - Want to know who's streaming for the charity? You can find the full schedule here! horaro.org/sgb2025/schedule
-!charity - The Trevor Project (thetrevorproject.org) is the world’s largest suicide prevention and mental health organization for lesbian, gay, bisexual, transgender, queer, and questioning (LGBTQ) young people. Your donations have a direct impact on their ability to provide life-saving counseling services to LGBTQ young people.
-!incentives - (list your incentives here - see below for common incentive ideas)
-!legislation - The Trevor Project's advocacy programs span the country, and include various types of legislation and education. They have passed 30 bills in the last 10 years, and have fathered 25 different movements, such as "Protecting with Pride".
-!trevor - Did you know that one accepting adult decreases the risk of suicide by 40% for LGBTQ young people. The Trevor Project provides LGBTQ youth with 24/7 crisis counseling via phone, text, and chat. Head to www.thetrevorproject.org/get-help if you, or anybody you know may need help.
-!showciety - The Super Mario Showciety is a community of Super Mario streamers, builders, viewers, and players! To get involved with the Showciety, check out our Discord discord.gg/skNMmDe and Blue Sky bsky.app/profile/showciety.org Thanks for your support!
+* !donate - You can donate to The Trevor Project at www.showciety.gives
+* !schedule - Want to know who's streaming for the charity? You can find the full schedule here! horaro.org/sgb2025/schedule
+* !charity - The Trevor Project (thetrevorproject.org) is the world’s largest suicide prevention and mental health organization for lesbian, gay, bisexual, transgender, queer, and questioning (LGBTQ) young people. Your donations have a direct impact on their ability to provide life-saving counseling services to LGBTQ young people.
+* !incentives - (list your incentives here - see below for common incentive ideas)
+* !legislation - The Trevor Project's advocacy programs span the country, and include various types of legislation and education. They have passed 30 bills in the last 10 years, and have fathered 25 different movements, such as "Protecting with Pride".
+* !trevor - Did you know that one accepting adult decreases the risk of suicide by 40% for LGBTQ young people. The Trevor Project provides LGBTQ youth with 24/7 crisis counseling via phone, text, and chat. Head to www.thetrevorproject.org/get-help if you, or anybody you know may need help.
+* !showciety - The Super Mario Showciety is a community of Super Mario streamers, builders, viewers, and players! To get involved with the Showciety, check out our Discord discord.gg/skNMmDe and Blue Sky bsky.app/profile/showciety.org Thanks for your support!
 
 ## Finalization
 
