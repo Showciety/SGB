@@ -1,6 +1,6 @@
 # Introduction
 
-Here's some instructions for getting ready for the SGB 2025 charity event for The Trevor Project! These instructions are geared towards Windows builds of OBS Studio. They will likely work on other Operating Systems, but may not line up exactly. We also provide some limited instructions for using SLOBS.
+Here's some instructions for getting ready for the SGB 2026 charity event for The Trevor Project! These instructions are geared towards Windows builds of OBS Studio. They will likely work on other Operating Systems, but may not line up exactly. We also provide some limited instructions for using SLOBS.
 
 # Overview
 
@@ -36,12 +36,12 @@ SLOBS does not support importing scene collections so you will need to follow th
 5. Click on the down-arrow next to "Scenes" panel heading in the bottom left
 6. Click "Manage Scene Collections"
 7. In the dialogue that opens click "Import Load existing scenes from OBS" in the top right of the dialogue
-8. Wait for it to finish importing and all your scene collections from OBS Studio should be imported! If there is more than one scene collection imported you will need to click on the "SGB 2025" scene collection under "Your Scene Collections:" on the left of the dialogue.
+8. Wait for it to finish importing and all your scene collections from OBS Studio should be imported! If there is more than one scene collection imported you will need to click on the "SGB26" scene collection under "Your Scene Collections:" on the left of the dialogue.
 9. Click "Close" on the "Manage Scene Collections" dialogue and start "[Required Customizations](#required-customizations)"!
 
 # Stream Setup
 
-This zip file contains the scene collection "SGB25.json" (for import into OBS), image assets, the font used for the text sources, music assets and anything else you may need. The assumed canvas size is 1920x1080. If you would like to use a 1280x720 canvas size you will need to make your own modifications or use a 1080p canvas and rescale stream/output resolution to 720p.
+This zip file contains the scene collection "SGB26.json" (for import into OBS), image assets, the font used for the text sources, music assets and anything else you may need. The assumed canvas size is 1920x1080. If you would like to use a 1280x720 canvas size you will need to make your own modifications or use a 1080p canvas and rescale stream/output resolution to 720p.
 
 ## Install Font
 
@@ -49,11 +49,11 @@ Before opening OBS Studio make sure to right click the SMM2 font "super-mario-ma
 
 ## Importing Scene Collection
 
-To simplify the setup we've included an exported scene collection (SGB25.json). To use this in OBS Studio click "Scene Collection" in the top menu, click Import, the import dialogue should open, click the three dots in the "Collection Path" box, select the JSON file and click the "Import" button.
+To simplify the setup we've included an exported scene collection (SGB26.json). To use this in OBS Studio click "Scene Collection" in the top menu, click Import, the import dialogue should open, click the three dots in the "Collection Path" box, select the JSON file and click the "Import" button.
 
 ## Finding Missing Files
 
-Once you import the scene collection you can then click on "Scene Collection" in the top bar and select "SGB25" to load the scene collection (do not do this live as OBS may crash). You will get a dialogue titled "Missing Files" to point OBS to the location all the image and audio assets are stored. Since we've put all the files necessary in this zip file you just have to click "Search Directory..." and browse to where you extracted this to. Once all the files have a file path listed in the "New File" column you can click "Apply".
+Once you import the scene collection you can then click on "Scene Collection" in the top bar and select "SGB26" to load the scene collection (do not do this live as OBS may crash). You will get a dialogue titled "Missing Files" to point OBS to the location all the image and audio assets are stored. Since we've put all the files necessary in this zip file you just have to click "Search Directory..." and browse to where you extracted this to. Once all the files have a file path listed in the "New File" column you can click "Apply".
 
 ### Required Customizations
 
@@ -78,7 +78,7 @@ You will also need to go into Edit > "Advanced Audio Properties" and set the "Au
 
 Depending on your setup you may need to add your own audio sources and/or remove all of ours. There are too many combinations to list for a general guide.
 
-We will try to help if you're having trouble in [#sgb25-setup-help](https://discord.com/channels/475693157720522752/1427377014247129283) for specific setups.
+We will try to help if you're having trouble in [#sgb26-troubleshooting](https://discord.com/channels/475693157720522752/1549284772923179128) for specific setups.
 
 ### Suggested Optional Customizations
 
@@ -97,7 +97,7 @@ You are not limited to ONLY these changes! These are here to give you an idea of
 Please set up the following bot commands. It's recommended to do this shortly before your stream so you don't impact your normal setup.
 
 * !donate - You can donate to The Trevor Project at www.showciety.gives
-* !schedule - Want to know who's streaming for the charity? You can find the full schedule here! horaro.org/sgb2025/schedule
+* !schedule - Want to know who's streaming for the charity? You can find the full schedule here! horaro.net/sgb26/main
 * !charity - The Trevor Project (thetrevorproject.org) is the world’s largest suicide prevention and mental health organization for lesbian, gay, bisexual, transgender, queer, and questioning (LGBTQ) young people. Your donations have a direct impact on their ability to provide life-saving counseling services to LGBTQ young people.
 * !incentives - (list your incentives here - see below for common incentive ideas)
 * !legislation - The Trevor Project's advocacy programs span the country, and include various types of legislation and education. They have passed 30 bills in the last 10 years, and have fathered 25 different movements, such as "Protecting with Pride".
@@ -108,7 +108,7 @@ Please set up the following bot commands. It's recommended to do this shortly be
 
 Do a recording, try all the scenes, speak a bit and try to play the game for a few minutes to make sure audio is working correctly! You can also do a test stream if you prefer.
 
-### Please ping the mods with a screenshot or recording of any scenes you plan to use in [#sgb25-setup-help](https://discord.com/channels/475693157720522752/1427377014247129283) and the mods will give it a once-over and let you know if there are any issues.
+### Please ping the mods with a screenshot or recording of any scenes you plan to use in [#sgb26-troubleshooting](https://discord.com/channels/475693157720522752/1549284772923179128) and the mods will give it a once-over and let you know if there are any issues.
 
 # Talking Points
 
@@ -123,17 +123,17 @@ If your mind blanks while you're live and you need some talking points, we got y
 
 # Pre-Charity-Stream Checklist:
 
-Start your stream at least **5 minutes** before your slot is scheduled to begin so that you're ready to go when it's time. Post when you're live in [#sgb25-general](https://discord.com/channels/475693157720522752/1427376805433835610) so a mod or helpful person can check to make sure everything looks and sounds good before the raid.
+Start your stream at least **15 minutes** before your slot is scheduled to begin so that you're ready to go when it's time. Post when you're live in [#sgb26-general](https://discord.com/channels/475693157720522752/1549284734796963910) so a coordinator can check to make sure everything looks and sounds good before the raid.
 1. Make sure your overlay looks ok. Power up the game and do a *test recording* or a *test stream* to make sure audio is working properly. You already did this in setup finalization, but it's good to do it again before you're live in case something has changed!
 2. Ensure follower/sub only chat is DISABLED so all viewers are allowed to chat.
 3. Make sure to REMOVE all donation links that aren't for the charity from your twitch panels and bots (e.g. commands, timers, panels, donation links, etc...).
 4. Add Twitch's "Charity" tag to your stream.
-5. Keep the [Donations+](https://app.tiltify.com/teams/ffdb1c2d-cc74-4048-95a1-421720155892/campaigns/a8c73e5a-1760-4d49-864e-2528e5a71c10/overview/donations) page open so you can read donations aloud. (**NOTE:** You must have joined the team on Tiltify to see this page!) (**HOT TIP:** This URL can be added as a Custom Browser Dock in OBS Studio, however it doesn't work the best unless you click the "fullscreen" button and is rather large.)
-7. Be ready to go a little longer if the streamer after you has an issue and needs a few more minutes. It's not ideal, but I'm sure you'd like someone to have your back like this if you had issues starting. You won't be expected to fill another time slot if someone ends up not being able to make it, but if you want to you can volunteer.
+5. Keep the [Donations+](https://app.tiltify.com/teams/ffdb1c2d-cc74-4048-95a1-421720155892/campaigns/ed39637d-61c4-40ca-a3e0-00e3644831b4/overview/donations) page open so you can read donations aloud. (**NOTE:** You must have joined the team on Tiltify to see this page!) (**HOT TIP:** This URL can be added as a Custom Browser Dock in OBS Studio, however it doesn't work the best unless you click the "fullscreen" button and is rather large.)
+7. Try to accomodate any unexpected issues the best you can.
 
 Stream as you usually would, encouraging donations and talking up the cause (See "Talking Points" if you get stuck). Read out the donation messages as much as you can.
 
-When you have confirmation that the next person on the [schedule](https://horaro.org/sgb2025/schedule) is ready for the switchover, give them a little intro and then raid into their stream.
+When you have confirmation that the next person on the [schedule](https://horaro.net/sgb26/main) is ready for the switchover, give them a little intro and then raid into their stream.
 
 # Indirect donations
 
@@ -141,7 +141,7 @@ To ensure absolute transparency with our viewers, to instill trust with our char
 
 # Crowd Control
 
-We only provide limited instructions for setting up Crowd Control, but we are happy to try to help in [#sgb25-setup-help](https://discord.com/channels/475693157720522752/1427377014247129283).
+We only provide limited instructions for setting up Crowd Control, but we are happy to try to help in [#sgb26-troubleshooting](https://discord.com/channels/475693157720522752/1549284772923179128).
 
 ## Download The App
 
@@ -149,20 +149,20 @@ Download the app from [Crowd Control's website](https://crowdcontrol.live/). Ins
 
 ## Game Setup
 
-Game setup is *the* hardest part of Crowd Control. Crowd Control has instructions for every game they support. You can access the game list [here](https://crowdcontrol.live/games/). Once you have selected your game there should be a linke on the left titled "Game Setup Guide". Again, we're happy to try to help in [#sgb25-setup-help](https://discord.com/channels/475693157720522752/1427377014247129283) if you are having trouble.
+Game setup is *the* hardest part of Crowd Control. Crowd Control has instructions for every game they support. You can access the game list [here](https://crowdcontrol.live/games/). Once you have selected your game there should be a linke on the left titled "Game Setup Guide". Again, we're happy to try to help in [#sgb26-troubleshooting](https://discord.com/channels/475693157720522752/1549284772923179128) if you are having trouble.
 
 ## Crowd Control Overlay
 
 Crowd Control provides a browser source overlay that shows what effects are active and who sent them. It's meant to fit over top of the game. You can configure how it looks in the Crowd Control app including transparencies. We've included pre-sized browser sources for each aspect ratio for you to paste your overlay URL into. It'll need to be done for each aspect ratio since you can only set one size for an individual browser source.
 
 You can find your URL in the Crowd Control app under "Overlay & Assets". Paste it as the URL for one or more of the pre-sized browser sources in their respective scenes:
-* 16:9 Crowd Control Overlay Source
-* 8:7 Crowd Control Overlay Source
-* 4:3 Crowd Control Overlay Source
+* Crowd Control 16:9 Overlay Source
+* Crowd Control 8:7 Overlay Source
+* Crowd Control 4:3 Overlay Source
 
 ## Set Up Charity Donations
 
-In the Crowd Control app go to "Config" -> "Charity" and enter our campaign ID, `a8c73e5a-1760-4d49-864e-2528e5a71c10`, into the "Enter Campaign by ID" box and **click the paper airplane button**. It should come up and show our campaign name: "Showciety Gives back 2025 (SGB25)", part of the description of the campaign and a link to the campaign. If this matches please click "Play for this Charity". When you install the extension (should happen automatically) your viewers will now be able to donate for Crowd Control Coins.
+In the Crowd Control app go to "Config" -> "Charity" and enter our campaign ID, `ed39637d-61c4-40ca-a3e0-00e3644831b4`, into the "Enter Campaign by ID" box and **click the paper airplane button**. It should come up and show our campaign name: "Showciety Gives Back 2026", part of the description of the campaign and a link to the campaign. If this matches please click "Play for this Charity". When you install the extension (should happen automatically) your viewers will now be able to donate for Crowd Control Coins.
 
 **All coins purchased via donation to our Tiltify campaign are shared between all sessions dedicated to that campaign. i.e. Coins purchased by donation during another SGB stream will be usable in your Crowd Control stream for SGB**
 
@@ -186,7 +186,7 @@ Here are some common donation incentives in no particular order.
     * Hot Peppers
     * Beanboozled
     * Spicy Chips/Confections
-    * Food you hate
+    * Food you hate (e.g. pickles)
     * Drink water (laaaaaaaaame :P)
 * Clothing
     * Put on a hat
@@ -280,4 +280,4 @@ Here are some common donation incentives in no particular order.
 
 # Final Notes
 
-If you are having trouble with anything we will do our best to help in the [#sgb25-setup-help](https://discord.com/channels/475693157720522752/1427377014247129283).
+If you are having trouble with anything we will do our best to help in the [#sgb26-troubleshooting](https://discord.com/channels/475693157720522752/1549284772923179128).

@@ -1,0 +1,7 @@
+#101064 Blue
+#003A48 Green
+#562188 Purple 1
+#3D079B Purple 2
+#F9C058 Yellow 1
+#F9D300 Yellow 2
+#E0AB4E Yellow 3
