@@ -20,7 +20,7 @@ You will most likely want to do these steps close to your charity stream slot as
 
 1. Remove any charity or donation links in your bot commands, profile, panels, etc... that are not related to the charity we're fundraising for. If you don't do this someone will get confused and donate to the wrong charity or accidentally send you money instead of the charity.
 2. Set up bot commands for the links to the charity, donation page, etc. (see "[Bot Commands](#bot-commands)"). Optionally set up timers to periodically post the same messages automatically. Make sure there are no conflicting commands - especially for !donate and !charity!
-3. Optionally set up a panel on your Twitch channel to advertises the event and provides a link to the donation page.
+3. Optionally set up a panel on your Twitch channel to advertise the event and provide a link to the donation page.
 	a. Click "Add Image" and upload one of the panel images included: 'Panel_Image_Grayscale.png', 'Panel_Image_OrangeWhite.png', 'Panel_Image_OrangeYellow.png' or 'Panel_Image_PurpleWhite.png'.
 	b. Paste "https://showciety.gives/" into the "Image Links To:" box.
 	c. Click "Submit"
@@ -112,7 +112,7 @@ Do a recording, try all the scenes, speak a bit and try to play the game for a f
 
 # Talking Points
 
-If your mind blanks while you're live and you need some talking points, we got you. Here are some talking points you can OPTIONALLY bring up to inform people on what the charity does. If people know what the charity does is important they will be more likely to donate!
+If your mind blanks while you're live and you need some talking points, we got you. Here are some talking points you can OPTIONALLY bring up to inform people on what the charity does. If people understand the charity does important work, they will be more likely to donate!
 
 * LGBTQ young people are four times more likely to attempt suicide. Every day, LGBTQ young people reach out for mental health support. When you donate to Trevor, you ensure volunteers can continue to be there for them.
 * Trevor provides DIRECT suicide prevention and crisis intervention services to support via phone, text, and chat.
@@ -149,7 +149,7 @@ Download the app from [Crowd Control's website](https://crowdcontrol.live/). Ins
 
 ## Game Setup
 
-Game setup is *the* hardest part of Crowd Control. Crowd Control has instructions for every game they support. You can access the game list [here](https://crowdcontrol.live/games/). Once you have selected your game there should be a linke on the left titled "Game Setup Guide". Again, we're happy to try to help in [#sgb26-troubleshooting](https://discord.com/channels/475693157720522752/1549284772923179128) if you are having trouble.
+Game setup is *the* hardest part of Crowd Control. Crowd Control has instructions for every game they support. You can access the game list [here](https://crowdcontrol.live/games/). Once you have selected your game there should be a link on the left titled "Game Setup Guide". Again, we're happy to try to help in [#sgb26-troubleshooting](https://discord.com/channels/475693157720522752/1549284772923179128) if you are having trouble.
 
 ## Crowd Control Overlay
 
@@ -217,7 +217,7 @@ Here are some common donation incentives in no particular order.
     * Follow Donor on Twitter/Twitch/Youtube
     * Incentives follows (i.e. for every sub on Youtube, the streamer donates $1 to the charity)
     * Shout Donor out on Twitter
-    * Add Donor to Auto-Host list for 1 month
+	* Channel point rewards that make the streamer donate dollar ammounts (e.g. 1000 points for $1 dono, 10000 points for $10 dono)
 * Misc
     * Dance 
     * Draw a picture (extra if they choose)
