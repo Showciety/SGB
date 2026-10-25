@@ -30,8 +30,8 @@
             "name": "Ending Scene"
         }
     ],
-    "current_scene": "Live 4:3 Left",
-    "current_program_scene": "Live 4:3 Left",
+    "current_scene": "Live 16:9 Right",
+    "current_program_scene": "Live 16:9 Right",
     "canvases": [],
     "current_transition": "Fade",
     "transition_duration": 300,
@@ -357,7 +357,7 @@
                 "looping": true,
                 "restart_on_activate": false
             },
-            "mixers": 255,
+            "mixers": 227,
             "sync": 0,
             "flags": 0,
             "volume": 0.3981071710586548,
@@ -655,9 +655,14 @@
             "versioned_id": "dshow_input",
             "settings": {
                 "video_device_id": "ezcap U3 capture-04:\\\\?\\usb#22vid_1bcf&pid_0b10&mi_00#229&29c5bc9&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
-                "last_video_device_id": "ezcap U3 capture-04:\\\\?\\usb#22vid_1bcf&pid_0b10&mi_00#229&29c5bc9&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global"
+                "last_video_device_id": "ezcap U3 capture-04:\\\\?\\usb#22vid_1bcf&pid_0b10&mi_00#229&29c5bc9&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "buffering": 2,
+                "color_space": "709",
+                "color_range": "partial",
+                "autorotation": false,
+                "hw_decode": true
             },
-            "mixers": 255,
+            "mixers": 227,
             "sync": 0,
             "flags": 0,
             "volume": 1.0,
@@ -692,7 +697,7 @@
                 "webpage_control_level": 0,
                 "reroute_audio": true
             },
-            "mixers": 255,
+            "mixers": 233,
             "sync": 0,
             "flags": 0,
             "volume": 1.0,
@@ -1007,6 +1012,35 @@
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "ObsBrowser.Refresh": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536936450,
+            "name": "Desktop Audio Source",
+            "uuid": "3231b9df-9c0e-49f1-a708-8e5c8166154a",
+            "id": "wasapi_output_capture",
+            "versioned_id": "wasapi_output_capture",
+            "settings": {},
+            "mixers": 227,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -1443,7 +1477,7 @@
                 "priority": 1,
                 "window": "Babby Builds Wevels - V1.cc [SNES] - BizHawk:WindowsForms10.Window.8.app.0.2e85fd_r6_ad1:EmuHawk.exe"
             },
-            "mixers": 255,
+            "mixers": 227,
             "sync": 0,
             "flags": 0,
             "volume": 1.0,
@@ -1472,12 +1506,12 @@
             "id": "game_capture",
             "versioned_id": "game_capture",
             "settings": {
-                "window": "Minecraft 26.2 - Singleplayer:GLFW30:javaw.exe",
                 "capture_audio": true,
-                "capture_mode": "any_fullscreen",
+                "window": "Dolphin | Crowd Control 2.0 | JIT64 SC | Direct3D 12 | HLE | Super Mario Sunshine (GMSE01):Qt651QWindowIcon:Dolphin.exe",
+                "capture_mode": "window",
                 "hook_rate": 3
             },
-            "mixers": 63,
+            "mixers": 35,
             "sync": 0,
             "flags": 0,
             "volume": 1.0,
@@ -1640,78 +1674,7 @@
         },
         {
             "prev_ver": 536936450,
-            "name": "Link 16:9 Source",
-            "uuid": "b599b0b2-df09-4b70-9f0e-8cb69efc3842",
-            "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
-            "settings": {
-                "text": "showciety.gives",
-                "outline": true,
-                "extents": false,
-                "font": {
-                    "face": "Super Mario Maker 2",
-                    "style": "Regular",
-                    "size": 36,
-                    "flags": 0
-                },
-                "align": "center",
-                "valign": "top",
-                "outline_size": 2,
-                "outline_color": 4278190080,
-                "extents_cx": 1408,
-                "extents_cy": 64,
-                "transform": 0
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {},
-            "filters": [
-                {
-                    "prev_ver": 536936450,
-                    "name": "Scroll",
-                    "uuid": "e8cd2821-91d1-465c-aa11-7c205ee6e59a",
-                    "id": "scroll_filter",
-                    "versioned_id": "scroll_filter",
-                    "settings": {
-                        "speed_x": 60.0,
-                        "limit_cx": true,
-                        "cx": 1408
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": false,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                }
-            ]
-        },
-        {
-            "prev_ver": 536936450,
-            "name": "Link 4:3 Source",
+            "name": "Link Source",
             "uuid": "9a2b3f43-33a8-4477-a507-f0db894fb82a",
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
@@ -1727,7 +1690,7 @@
                 },
                 "align": "center",
                 "valign": "top",
-                "outline_size": 2,
+                "outline_size": 4,
                 "outline_color": 4278190080,
                 "extents_cx": 1056,
                 "extents_cy": 64,
@@ -1782,84 +1745,13 @@
         },
         {
             "prev_ver": 536936450,
-            "name": "Link 8:7 Source",
-            "uuid": "2d7e9e43-3437-4eac-b169-c134744f9a87",
-            "id": "text_gdiplus",
-            "versioned_id": "text_gdiplus_v3",
-            "settings": {
-                "text": "showciety.gives",
-                "outline": true,
-                "extents": false,
-                "font": {
-                    "face": "Super Mario Maker 2",
-                    "style": "Regular",
-                    "size": 36,
-                    "flags": 0
-                },
-                "align": "center",
-                "valign": "top",
-                "outline_size": 2,
-                "outline_color": 4278190080,
-                "extents_cx": 1056,
-                "extents_cy": 64,
-                "transform": 0
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {},
-            "filters": [
-                {
-                    "prev_ver": 536936450,
-                    "name": "Scroll",
-                    "uuid": "efbc7662-048d-48b4-8b02-d7139d3f88b0",
-                    "id": "scroll_filter",
-                    "versioned_id": "scroll_filter",
-                    "settings": {
-                        "speed_x": 60.0,
-                        "limit_cx": true,
-                        "cx": 1408
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": false,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                }
-            ]
-        },
-        {
-            "prev_ver": 536936450,
             "name": "Live 16:9 Left",
             "uuid": "8beb614d-c37a-450f-88df-f590410bad20",
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 53,
+                "id_counter": 55,
                 "items": [
                     {
                         "name": "Mic Source",
@@ -1936,6 +1828,45 @@
                         },
                         "hide_transition": {
                             "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Desktop Audio Source",
+                        "source_uuid": "3231b9df-9c0e-49f1-a708-8e5c8166154a",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 54,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 300
+                        },
+                        "hide_transition": {
+                            "duration": 300
                         },
                         "private_settings": {}
                     },
@@ -2369,7 +2300,7 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Pronoun Source",
+                        "name": "Pronouns Source",
                         "source_uuid": "2be58c5e-c97f-42d4-93cf-8262e9869bb9",
                         "visible": true,
                         "locked": true,
@@ -2492,9 +2423,9 @@
                         "locked": true,
                         "rot": 0.0,
                         "align": 5,
-                        "bounds_type": 4,
+                        "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -2531,9 +2462,9 @@
                         "locked": true,
                         "rot": 0.0,
                         "align": 5,
-                        "bounds_type": 4,
+                        "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -2570,9 +2501,9 @@
                         "locked": true,
                         "rot": 0.0,
                         "align": 5,
-                        "bounds_type": 4,
+                        "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -2642,8 +2573,8 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Link 16:9 Source",
-                        "source_uuid": "b599b0b2-df09-4b70-9f0e-8cb69efc3842",
+                        "name": "Link Source",
+                        "source_uuid": "9a2b3f43-33a8-4477-a507-f0db894fb82a",
                         "visible": true,
                         "locked": true,
                         "rot": 0.0,
@@ -2655,7 +2586,7 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 51,
+                        "id": 55,
                         "group_item_backup": false,
                         "pos": {
                             "x": 724.0,
@@ -2969,8 +2900,6 @@
                 "libobs.hide_scene_item.41": [],
                 "libobs.show_scene_item.23": [],
                 "libobs.hide_scene_item.23": [],
-                "libobs.show_scene_item.51": [],
-                "libobs.hide_scene_item.51": [],
                 "libobs.show_scene_item.42": [],
                 "libobs.hide_scene_item.42": [],
                 "libobs.show_scene_item.20": [],
@@ -2980,7 +2909,11 @@
                 "libobs.show_scene_item.52": [],
                 "libobs.hide_scene_item.52": [],
                 "libobs.show_scene_item.18": [],
-                "libobs.hide_scene_item.18": []
+                "libobs.hide_scene_item.18": [],
+                "libobs.show_scene_item.54": [],
+                "libobs.hide_scene_item.54": [],
+                "libobs.show_scene_item.55": [],
+                "libobs.hide_scene_item.55": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -2995,7 +2928,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 30,
+                "id_counter": 32,
                 "custom_size": false,
                 "items": [
                     {
@@ -3073,6 +3006,45 @@
                         },
                         "hide_transition": {
                             "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Desktop Audio Source",
+                        "source_uuid": "3231b9df-9c0e-49f1-a708-8e5c8166154a",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 31,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 300
+                        },
+                        "hide_transition": {
+                            "duration": 300
                         },
                         "private_settings": {}
                     },
@@ -3506,7 +3478,7 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Pronoun Source",
+                        "name": "Pronouns Source",
                         "source_uuid": "2be58c5e-c97f-42d4-93cf-8262e9869bb9",
                         "visible": true,
                         "locked": true,
@@ -3629,9 +3601,9 @@
                         "locked": true,
                         "rot": 0.0,
                         "align": 5,
-                        "bounds_type": 4,
+                        "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -3668,9 +3640,9 @@
                         "locked": true,
                         "rot": 0.0,
                         "align": 5,
-                        "bounds_type": 4,
+                        "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -3707,9 +3679,9 @@
                         "locked": true,
                         "rot": 0.0,
                         "align": 5,
-                        "bounds_type": 4,
+                        "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -3779,8 +3751,8 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Link 16:9 Source",
-                        "source_uuid": "b599b0b2-df09-4b70-9f0e-8cb69efc3842",
+                        "name": "Link Source",
+                        "source_uuid": "9a2b3f43-33a8-4477-a507-f0db894fb82a",
                         "visible": true,
                         "locked": true,
                         "rot": 0.0,
@@ -3792,7 +3764,7 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 30,
+                        "id": 32,
                         "group_item_backup": false,
                         "pos": {
                             "x": 1196.0,
@@ -4106,8 +4078,6 @@
                 "libobs.hide_scene_item.19": [],
                 "libobs.show_scene_item.20": [],
                 "libobs.hide_scene_item.20": [],
-                "libobs.show_scene_item.30": [],
-                "libobs.hide_scene_item.30": [],
                 "libobs.show_scene_item.21": [],
                 "libobs.hide_scene_item.21": [],
                 "libobs.show_scene_item.22": [],
@@ -4119,7 +4089,11 @@
                 "libobs.show_scene_item.25": [],
                 "libobs.hide_scene_item.25": [],
                 "libobs.show_scene_item.26": [],
-                "libobs.hide_scene_item.26": []
+                "libobs.hide_scene_item.26": [],
+                "libobs.show_scene_item.31": [],
+                "libobs.hide_scene_item.31": [],
+                "libobs.show_scene_item.32": [],
+                "libobs.hide_scene_item.32": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -4134,7 +4108,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 32,
+                "id_counter": 35,
                 "custom_size": false,
                 "items": [
                     {
@@ -4212,6 +4186,45 @@
                         },
                         "hide_transition": {
                             "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Desktop Audio Source",
+                        "source_uuid": "3231b9df-9c0e-49f1-a708-8e5c8166154a",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 35,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 300
+                        },
+                        "hide_transition": {
+                            "duration": 300
                         },
                         "private_settings": {}
                     },
@@ -4645,7 +4658,7 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Pronoun Source",
+                        "name": "Pronouns Source",
                         "source_uuid": "2be58c5e-c97f-42d4-93cf-8262e9869bb9",
                         "visible": true,
                         "locked": true,
@@ -4770,7 +4783,7 @@
                         "align": 5,
                         "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -4809,7 +4822,7 @@
                         "align": 5,
                         "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -4848,7 +4861,7 @@
                         "align": 5,
                         "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -4918,7 +4931,7 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Link 4:3 Source",
+                        "name": "Link Source",
                         "source_uuid": "9a2b3f43-33a8-4477-a507-f0db894fb82a",
                         "visible": true,
                         "locked": true,
@@ -5258,7 +5271,9 @@
                 "libobs.show_scene_item.25": [],
                 "libobs.hide_scene_item.25": [],
                 "libobs.show_scene_item.26": [],
-                "libobs.hide_scene_item.26": []
+                "libobs.hide_scene_item.26": [],
+                "libobs.show_scene_item.35": [],
+                "libobs.hide_scene_item.35": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -5273,7 +5288,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 30,
+                "id_counter": 31,
                 "custom_size": false,
                 "items": [
                     {
@@ -5351,6 +5366,45 @@
                         },
                         "hide_transition": {
                             "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Desktop Audio Source",
+                        "source_uuid": "3231b9df-9c0e-49f1-a708-8e5c8166154a",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 31,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 300
+                        },
+                        "hide_transition": {
+                            "duration": 300
                         },
                         "private_settings": {}
                     },
@@ -5784,7 +5838,7 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Pronoun Source",
+                        "name": "Pronouns Source",
                         "source_uuid": "2be58c5e-c97f-42d4-93cf-8262e9869bb9",
                         "visible": true,
                         "locked": true,
@@ -5909,7 +5963,7 @@
                         "align": 5,
                         "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -5948,7 +6002,7 @@
                         "align": 5,
                         "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -5987,7 +6041,7 @@
                         "align": 5,
                         "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -6057,7 +6111,7 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Link 4:3 Source",
+                        "name": "Link Source",
                         "source_uuid": "9a2b3f43-33a8-4477-a507-f0db894fb82a",
                         "visible": true,
                         "locked": true,
@@ -6397,7 +6451,9 @@
                 "libobs.show_scene_item.25": [],
                 "libobs.hide_scene_item.25": [],
                 "libobs.show_scene_item.26": [],
-                "libobs.hide_scene_item.26": []
+                "libobs.hide_scene_item.26": [],
+                "libobs.show_scene_item.31": [],
+                "libobs.hide_scene_item.31": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -6412,7 +6468,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 32,
+                "id_counter": 34,
                 "custom_size": false,
                 "items": [
                     {
@@ -6490,6 +6546,45 @@
                         },
                         "hide_transition": {
                             "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Desktop Audio Source",
+                        "source_uuid": "3231b9df-9c0e-49f1-a708-8e5c8166154a",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 33,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 300
+                        },
+                        "hide_transition": {
+                            "duration": 300
                         },
                         "private_settings": {}
                     },
@@ -6923,7 +7018,7 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Pronoun Source",
+                        "name": "Pronouns Source",
                         "source_uuid": "2be58c5e-c97f-42d4-93cf-8262e9869bb9",
                         "visible": true,
                         "locked": true,
@@ -7048,7 +7143,7 @@
                         "align": 5,
                         "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -7087,7 +7182,7 @@
                         "align": 5,
                         "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -7126,7 +7221,7 @@
                         "align": 5,
                         "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -7196,8 +7291,8 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Link 8:7 Source",
-                        "source_uuid": "2d7e9e43-3437-4eac-b169-c134744f9a87",
+                        "name": "Link Source",
+                        "source_uuid": "9a2b3f43-33a8-4477-a507-f0db894fb82a",
                         "visible": true,
                         "locked": true,
                         "rot": 0.0,
@@ -7209,7 +7304,7 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 32,
+                        "id": 34,
                         "group_item_backup": false,
                         "pos": {
                             "x": 472.0,
@@ -7523,8 +7618,6 @@
                 "libobs.hide_scene_item.19": [],
                 "libobs.show_scene_item.28": [],
                 "libobs.hide_scene_item.28": [],
-                "libobs.show_scene_item.32": [],
-                "libobs.hide_scene_item.32": [],
                 "libobs.show_scene_item.21": [],
                 "libobs.hide_scene_item.21": [],
                 "libobs.show_scene_item.22": [],
@@ -7536,7 +7629,11 @@
                 "libobs.show_scene_item.25": [],
                 "libobs.hide_scene_item.25": [],
                 "libobs.show_scene_item.26": [],
-                "libobs.hide_scene_item.26": []
+                "libobs.hide_scene_item.26": [],
+                "libobs.show_scene_item.33": [],
+                "libobs.hide_scene_item.33": [],
+                "libobs.show_scene_item.34": [],
+                "libobs.hide_scene_item.34": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -7551,7 +7648,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 30,
+                "id_counter": 32,
                 "custom_size": false,
                 "items": [
                     {
@@ -7629,6 +7726,45 @@
                         },
                         "hide_transition": {
                             "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Desktop Audio Source",
+                        "source_uuid": "3231b9df-9c0e-49f1-a708-8e5c8166154a",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 31,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 300
+                        },
+                        "hide_transition": {
+                            "duration": 300
                         },
                         "private_settings": {}
                     },
@@ -8062,7 +8198,7 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Pronoun Source",
+                        "name": "Pronouns Source",
                         "source_uuid": "2be58c5e-c97f-42d4-93cf-8262e9869bb9",
                         "visible": true,
                         "locked": true,
@@ -8187,7 +8323,7 @@
                         "align": 5,
                         "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -8226,7 +8362,7 @@
                         "align": 5,
                         "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -8265,7 +8401,7 @@
                         "align": 5,
                         "bounds_type": 5,
                         "bounds_align": 0,
-                        "bounds_crop": false,
+                        "bounds_crop": true,
                         "crop_left": 0,
                         "crop_top": 0,
                         "crop_right": 0,
@@ -8335,8 +8471,8 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Link 8:7 Source",
-                        "source_uuid": "2d7e9e43-3437-4eac-b169-c134744f9a87",
+                        "name": "Link Source",
+                        "source_uuid": "9a2b3f43-33a8-4477-a507-f0db894fb82a",
                         "visible": true,
                         "locked": true,
                         "rot": 0.0,
@@ -8348,7 +8484,7 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 30,
+                        "id": 32,
                         "group_item_backup": false,
                         "pos": {
                             "x": 1447.5,
@@ -8662,8 +8798,6 @@
                 "libobs.hide_scene_item.19": [],
                 "libobs.show_scene_item.20": [],
                 "libobs.hide_scene_item.20": [],
-                "libobs.show_scene_item.30": [],
-                "libobs.hide_scene_item.30": [],
                 "libobs.show_scene_item.21": [],
                 "libobs.hide_scene_item.21": [],
                 "libobs.show_scene_item.22": [],
@@ -8675,7 +8809,11 @@
                 "libobs.show_scene_item.25": [],
                 "libobs.hide_scene_item.25": [],
                 "libobs.show_scene_item.26": [],
-                "libobs.hide_scene_item.26": []
+                "libobs.hide_scene_item.26": [],
+                "libobs.show_scene_item.31": [],
+                "libobs.hide_scene_item.31": [],
+                "libobs.show_scene_item.32": [],
+                "libobs.hide_scene_item.32": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -8692,7 +8830,7 @@
             "settings": {
                 "device_id": "{0.0.1.00000000}.{26912605-af83-44b0-969c-d1f5a0875a53}"
             },
-            "mixers": 255,
+            "mixers": 229,
             "sync": 0,
             "flags": 0,
             "volume": 1.0,
@@ -8716,7 +8854,7 @@
         },
         {
             "prev_ver": 536936450,
-            "name": "Pronoun Source",
+            "name": "Pronouns Source",
             "uuid": "2be58c5e-c97f-42d4-93cf-8262e9869bb9",
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v2",
@@ -9062,9 +9200,9 @@
                 "width": 1920,
                 "height": 1080,
                 "webpage_control_level": 0,
-                "reroute_audio": false
+                "reroute_audio": true
             },
-            "mixers": 255,
+            "mixers": 241,
             "sync": 0,
             "flags": 0,
             "volume": 1.0,
@@ -9084,7 +9222,7 @@
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
-            "monitoring_type": 0,
+            "monitoring_type": 2,
             "private_settings": {}
         },
         {
@@ -9380,7 +9518,7 @@
                 "last_resolution": "1920x1080",
                 "buffering": 2,
                 "frame_interval": 166666,
-                "res_type": 1,
+                "res_type": 0,
                 "video_format": 400,
                 "active": true,
                 "color_space": "709",
@@ -9408,66 +9546,7 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
-            "private_settings": {},
-            "filters": [
-                {
-                    "prev_ver": 536936450,
-                    "name": "Crop/Pad",
-                    "uuid": "d110ff89-3ad0-4179-a27c-5b8f10ff8424",
-                    "id": "crop_filter",
-                    "versioned_id": "crop_filter",
-                    "settings": {
-                        "left": 560,
-                        "top": 240,
-                        "cx": 800,
-                        "cy": 600,
-                        "relative": false
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": true,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                },
-                {
-                    "prev_ver": 536936450,
-                    "name": "Chroma Key",
-                    "uuid": "79532311-febd-467b-a368-a29397d4a723",
-                    "id": "chroma_key_filter",
-                    "versioned_id": "chroma_key_filter_v2",
-                    "settings": {
-                        "similarity": 420,
-                        "smoothness": 100
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": true,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                }
-            ]
+            "private_settings": {}
         }
     ]
 }
