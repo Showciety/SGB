@@ -1,6 +1,6 @@
 # Introduction
 
-Here's some instructions for getting ready for the SGB 2026 charity event for The Trevor Project! These instructions are geared towards Windows builds of OBS Studio. They will likely work on other Operating Systems, but may not line up exactly. We also provide some limited instructions for using SLOBS.
+Here's some instructions for getting ready for the Showciety Gives Back 2026 charity event benefitting The Trevor Project! These instructions are geared towards Windows builds of OBS Studio. They will likely work on other Operating Systems, but may not line up exactly. We also provide some limited instructions for using SLOBS. We will do our best to help if you post your issues in [#sgb26-troubleshooting](https://discord.com/channels/475693157720522752/1549284772923179128) no matter what operating system or streaming software you use!
 
 # Overview
 
@@ -8,22 +8,22 @@ Here's some instructions for getting ready for the SGB 2026 charity event for Th
 
 These steps can be done early and should not affect your regular streams.
 
-1. Set up OBS for the event. See "[Stream Setup](#stream-setup)". Since this is a separate scene collection it shouldn't impact your regular streams. You may have your own flourish, but we would like to try to have a generally consistent "look" for the event. See "[Streamlabs OBS (SLOBS) Notes](#streamlabs-obs-slobs-notes)" if you use SLOBS.
+1. Set up OBS for the event. See "[Stream Setup](#stream-setup)". Since this is a separate scene collection it shouldn't impact your regular streams. You may have your own flourish, but we would like to try to have a generally consistent "look" for the event so please keep that in mind. See "[Streamlabs OBS (SLOBS) Notes](#streamlabs-obs-slobs-notes)" if you use SLOBS. Ping @Mod to test the charity alerts.
 2. Make a Tiltify account (or login with Twitch) and request to be part of the team on Tiltify. Once logged in go to the [Super Mario Showciety Team Page](https://tiltify.com/+super-mario-showciety/profile) to request an invite. There is a black "Join team +" button next to the "Super Mario Showciety on Tiltify" header at the top!
 3. While **NOT** required we recommend planning donation incentives. See "[Donation Incentive Ideas](#donation-incentive-ideas)".
 4. Get to know a little about the charity we're supporting so you can talk it up. See "[Talking Points](#talking-points)" if you need something to get the juices flowing, but you should try to know a few things that the talking points can refresh in your mind's eye.
 5. Get to know the people before and after your slot so that you can welcome/introduce them.
+6. Get to know your coordinator a little!
+7. Please remember your time slot, show up on time and finish on time as a courtesy to the other streamers before and after your event.
+8. Optionally set up [Twitch Panels](#twitch-panels) (this may be done closer to the event if you are using an image and linking directly to https://showciety.gives/, or changed from the campaign link to the donation link closer to the event.
 
 ## Late Setup
 
 You will most likely want to do these steps close to your charity stream slot as they may interrupt your regular streams.
 
 1. Remove any charity or donation links in your bot commands, profile, panels, etc... that are not related to the charity we're fundraising for. If you don't do this someone will get confused and donate to the wrong charity or accidentally send you money instead of the charity.
-2. Set up bot commands for the links to the charity, donation page, etc. (see "[Bot Commands](#bot-commands)"). Optionally set up timers to periodically post the same messages automatically. Make sure there are no conflicting commands - especially for !donate and !charity!
-3. Optionally set up a panel on your Twitch channel to advertise the event and provide a link to the donation page.
-	a. Click "Add Image" and upload one of the panel images included: 'Panel_Image_Grayscale.png', 'Panel_Image_OrangeWhite.png', 'Panel_Image_OrangeYellow.png' or 'Panel_Image_PurpleWhite.png'.
-	b. Paste "https://showciety.gives/" into the "Image Links To:" box.
-	c. Click "Submit"
+2. Set up bot commands for the links to the charity, donation page, etc. (see "[Bot Commands](#bot-commands)"). Optionally set up timers to periodically post the same messages automatically. Make sure there are no conflicting commands - especially for !donate and !charity! (Having a !tip command for sending you money personally is fine as long as you're not accepting money for the charity)
+3. Update your panel with the direct donation link. (OPTIONAL)
 
 # Streamlabs OBS (SLOBS) Notes
 
@@ -61,22 +61,29 @@ We have created six "Live" scenes called "Live 16:9 Left Scene", "Live 16:9 Righ
 
 You will need to edit the sources to change text, match your devices, use your preferred device settings or add your preferred filters (e.g. Cropping, Chroma Key or audio filters like compressor, expander, etc...) to some degree. The amount you need to change will vary on your setup.
 
-We have added multiple types of video/audio sources with adequate transforms applied for ease of use and you **will not** require ALL of them as there are conflicting sources (e.g. "Desktop Audio Source" and "Application Audio Capture (BETA)"). Make sure to remove conflicting sources or you will have issues. You will need to modify some of the sources you do use at least a little bit such as setting your device, device settings, cropping your camera, adding chroma key, adding an audio compressor filter, etc... We won't cover the specifics here other than to say you might need to edit it.
+We have added multiple types of video/audio sources with adequate transforms applied for ease of use and you **will not** require ALL of them as there are conflicting sources (e.g. "Desktop Audio Source" and "Game Audio Source"). Make sure to remove conflicting sources or you will have issues. You will need to modify some of the sources you do use at least a little bit such as setting your device, device settings, cropping your camera, adding chroma key, adding an audio compressor filter, etc... We won't cover the specifics here other than to say you might need to edit it.
 
-Sources you will likely need to edit or remove:
+Sources you will likely need to edit, remove or hide:
+* Link Source (e.g. if you're doing Crowd Control and want people to donate that way it can be removed / hidden)
+* Commands 4:3 Source, Commands 8:7 Source, Commands 16:9 Source (if you are not having incentives you may remove !incentives)
 * Streamer Name Source
 * Pronouns Source
 * Game Name Source
+* Game Name 2 Source
 * Webcam Source
 * Game Capture Source
 * Display Capture Source
 * Capture Card Source
-* Desktop Audio
+* Desktop Audio Source
+* Game Audio Source
 * Mic Source
+* Crowd Control 16:9 Overlay Source
+* Crowd Control 8:7 Overlay Source
+* Crowd Control 4:3 Overlay Source
 
 You will also need to go into Edit > "Advanced Audio Properties" and set the "Audio Monitoring" and "Tracks" columns to work with your audio setup. We've preset these with some settings that may work for you, but you are responsible for ensuring they work properly.
 
-Depending on your setup you may need to add your own audio sources and/or remove all of ours. There are too many combinations to list for a general guide.
+Depending on your setup you may need to add your own sources and/or remove all of ours. There are too many combinations to list for a general guide.
 
 We will try to help if you're having trouble in [#sgb26-troubleshooting](https://discord.com/channels/475693157720522752/1549284772923179128) for specific setups.
 
@@ -84,35 +91,69 @@ We will try to help if you're having trouble in [#sgb26-troubleshooting](https:/
 
 You are not limited to ONLY these changes! These are here to give you an idea of where to start.
 
-* Resize the game to fit the game area. We've added a transform to the game sources that tries to do a good job of doing this, but it may not meet your needs. Feel free to modify them or delete them and add your own. NOTE: SLOBS does not import the transform so this will likely be required if you use SLOBS.
-* Adding your own alert sources
+* Resize the game to fit the game area. We've added a transform to the game sources that tries to do a good job of doing this, but it may not meet your needs. For example several emulators produce an image that is 1 pixel off the correct aspect ratio when not in full screen and Minecraft is one pixel too tall (1920x1081) when windowed for some reason. Feel free to modify them or delete them and add your own. NOTE: SLOBS does not import the transform so this will likely be required if you use SLOBS.
+* Updating the "Streamer Alert Source" with your own alert URL
 * Crop/Resize your camera, add any filters you need, etc...
 * Add audio filters to sources
-* Change starting / BRB / ending music. We have provided three audio files to choose from, but you may use your own choice of royalty-free music or set up your own custom scenes
+* Change starting / BRB / ending music. We have provided several audio files to choose from, but you may use your own choice of royalty-free music or set up your own custom scenes
 * Transitions
 * Picture/Rig to put in place of camera for non-camera strimmers
+* Advanced audio properties track setup. You may need different audio to go to different tracks depending on your stream / recording setup (e.g. VOD track)
+* Change or update background music
+* Customize Crowd Control Overlay colour scheme / theme
+* Text outline colours (there is a list of colours in `palette.txt`)
+* Chat overlay (optional)
+* Subtitles (optional)
 
 ### Bot Commands
 
 Please set up the following bot commands. It's recommended to do this shortly before your stream so you don't impact your normal setup.
 
-* !donate - You can donate to The Trevor Project at www.showciety.gives
+* !donate - You may wish to have different donation text depending on if you are using Crowd Control or not. Both are provided here. It is recommended to make !donate or !cc an alias of the other so they both respond with the same text when using Crowd Control. If you are using Crowd Control you should locate your "Interact Link" in the Crowd Control app under "Live" in the bottom left and replace <Interact Link> with it.
+  * You can donate to The Trevor Project at showciety.gives
+  * You can donate via Crowd Control to The Trevor Project in the Crowd Control extension or here: <Interact Link>
 * !schedule - Want to know who's streaming for the charity? You can find the full schedule here! horaro.net/sgb26/main
 * !charity - The Trevor Project (thetrevorproject.org) is the world’s largest suicide prevention and mental health organization for lesbian, gay, bisexual, transgender, queer, and questioning (LGBTQ) young people. Your donations have a direct impact on their ability to provide life-saving counseling services to LGBTQ young people.
-* !incentives - (list your incentives here - see below for common incentive ideas)
+* !incentives - (list or link to your incentives here - see below for common incentive ideas) (OPTIONAL - remove from Commands text source if you are not using incentives)
 * !legislation - The Trevor Project's advocacy programs span the country, and include various types of legislation and education. They have passed 30 bills in the last 10 years, and have fathered 25 different movements, such as "Protecting with Pride".
-* !trevor - Did you know that one accepting adult decreases the risk of suicide by 40% for LGBTQ young people. The Trevor Project provides LGBTQ youth with 24/7 crisis counseling via phone, text, and chat. Head to www.thetrevorproject.org/get-help if you, or anybody you know may need help.
+* !trevor - Did you know that one accepting adult decreases the risk of suicide by 40% for LGBTQ young people. The Trevor Project provides LGBTQ youth with 24/7 crisis counseling via phone, text, and chat. Head to thetrevorproject.org/get-help if you, or anybody you know may need help.
 * !showciety - The Super Mario Showciety is a community of Super Mario streamers, builders, viewers, and players! To get involved with the Showciety, check out our Discord discord.gg/skNMmDe and Blue Sky bsky.app/profile/showciety.org Thanks for your support!
 
 ## Finalization
 
-Do a recording, try all the scenes, speak a bit and try to play the game for a few minutes to make sure audio is working correctly! You can also do a test stream if you prefer.
+Do a test recording or stream, try all the scenes, test your alerts, test your chat commands, speak a bit and try to play the game to make sure audio is working correctly! Ping an @Mod to send a test donation alert. Make sure the audio is working correctly.
 
-### Please ping the mods with a screenshot or recording of any scenes you plan to use in [#sgb26-troubleshooting](https://discord.com/channels/475693157720522752/1549284772923179128) and the mods will give it a once-over and let you know if there are any issues.
+After a test recording or stream run your OBS log through the [OBS Log Analyzer](https://obsproject.com/tools/analyzer) to highlight any issues!
+
+### Please create a thread and ping "@SGB26 Planning Team" with a screenshot or recording of any scenes you plan to use in [#sgb26-overlay-approval](https://discord.com/channels/475693157720522752/1562688927503097866) and someone from the planning team will give it a once-over, let you know if there are any issues or approve it once it looks good.
+
+# Twitch Panels
+There are two options for setting up panels for the event:
+## Panel Image
+Optionally set up a panel on your Twitch channel to advertise the event and provide a link to the donation page.
+   1. Click "Add Image" and upload one of the panel images included
+     * `panel_image_blue.png`
+	   * ![panel_image_blue.png](panel_image_blue.png)
+	 * `panel_image_green.png`
+	   * ![panel_image_green.png](panel_image_green.png)
+	 * `panel_image_orangegrey.png`
+	   * ![panel_image_orangegrey.png](panel_image_orangegrey.png)
+	 * `panel_image_orangeyellow.png`
+	   * ![panel_image_orangeyellow.png](panel_image_orangeyellow.png)
+	 * `panel_image_purple.png`
+	   * ![panel_image_purple.png](panel_image_purple.png)
+   2. Paste one of three links into the "Image Links To:" box:
+     * "https://showciety.gives/" to go directly to our donation page
+	 * "https://tiltify.com/+super-mario-showciety/showciety-gives-back-2026" to go to the campaign page
+	 * Your Crowd Control "Interact Link". You can get this in the Crowd Control app under "Live" on the bottom left.
+   2. Click "Submit"
+## Tiltify Extension
+Tiltify has great instructions for adding their extension to your panels: https://info.tiltify.com/support/solutions/articles/43000365921-integrating-tiltify-fundraising-extension-on-twitch#Adding-the-Extension-to-your-channel
+If you are on the Super Mario Showciety Tiltify team "Showciety Gives Back 2026" will show up in the "Select Campaign" dropdown.
 
 # Talking Points
 
-If your mind blanks while you're live and you need some talking points, we got you. Here are some talking points you can OPTIONALLY bring up to inform people on what the charity does. If people understand the charity does important work, they will be more likely to donate!
+If your mind blanks while you're live and you need some talking points, we got you. Here are some talking points you can OPTIONALLY bring up to inform people on what the charity does. If people understand that the charity does important work, they will be more likely to donate!
 
 * LGBTQ young people are four times more likely to attempt suicide. Every day, LGBTQ young people reach out for mental health support. When you donate to Trevor, you ensure volunteers can continue to be there for them.
 * Trevor provides DIRECT suicide prevention and crisis intervention services to support via phone, text, and chat.
@@ -133,7 +174,11 @@ Start your stream at least **15 minutes** before your slot is scheduled to begin
 
 Stream as you usually would, encouraging donations and talking up the cause (See "Talking Points" if you get stuck). Read out the donation messages as much as you can.
 
-When you have confirmation that the next person on the [schedule](https://horaro.net/sgb26/main) is ready for the switchover, give them a little intro and then raid into their stream.
+When you have confirmation that the next person on the [schedule](https://horaro.net/sgb26/main) is ready for the switchover, tell your audience what they are in for and then raid into their stream when your time slot is over.
+
+### Please do your absolute best to start and end on time out of respect to the other streamers participating in the event. Nobody wants their time cut short or to have to vamp for extended periods. That being said sometimes there are emergencies outside of your control so try to be accommodating if you can.
+
+### If you are unable to stream for your time slot please let coordinators and your backup streamer know ASAP so they have some time to prepare
 
 # Indirect donations
 
