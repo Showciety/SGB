@@ -15,7 +15,7 @@ These steps can be done early and should not affect your regular streams.
 5. Get to know the people before and after your slot so that you can welcome/introduce them.
 6. Get to know your coordinator a little!
 7. Please remember your time slot, show up on time and finish on time as a courtesy to the other streamers before and after your event.
-8. Optionally set up [Twitch Panels](#twitch-panels) (this may be done closer to the event if you are using an image and linking directly to https://showciety.gives/, or changed from the campaign link to the donation link closer to the event.
+8. Optionally set up [Twitch Panels](#twitch-panels) (this may be done closer to the event if you are using an image and linking directly to https://showciety.gives/, or changed from the campaign link to the donation link closer to the event)
 
 ## Late Setup
 
@@ -132,16 +132,16 @@ There are two options for setting up panels for the event:
 ## Panel Image
 Optionally set up a panel on your Twitch channel to advertise the event and provide a link to the donation page.
    1. Click "Add Image" and upload one of the panel images included
-     * `panel_image_blue.png`
-	   * ![panel_image_blue.png](panel_image_blue.png)
-	 * `panel_image_green.png`
-	   * ![panel_image_green.png](panel_image_green.png)
-	 * `panel_image_orangegrey.png`
-	   * ![panel_image_orangegrey.png](panel_image_orangegrey.png)
-	 * `panel_image_orangeyellow.png`
-	   * ![panel_image_orangeyellow.png](panel_image_orangeyellow.png)
-	 * `panel_image_purple.png`
-	   * ![panel_image_purple.png](panel_image_purple.png)
+      * `panel_image_blue.png`
+	    * ![panel_image_blue.png](panel_image_blue.png)
+	  * `panel_image_green.png`
+	    * ![panel_image_green.png](panel_image_green.png)
+	  * `panel_image_orangegrey.png`
+	    * ![panel_image_orangegrey.png](panel_image_orangegrey.png)
+	  * `panel_image_orangeyellow.png`
+	    * ![panel_image_orangeyellow.png](panel_image_orangeyellow.png)
+	  * `panel_image_purple.png`
+	    * ![panel_image_purple.png](panel_image_purple.png)
    2. Paste one of three links into the "Image Links To:" box:
      * "https://showciety.gives/" to go directly to our donation page
 	 * "https://tiltify.com/+super-mario-showciety/showciety-gives-back-2026" to go to the campaign page
