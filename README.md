@@ -107,7 +107,7 @@ You are not limited to ONLY these changes! These are here to give you an idea of
 
 ### Bot Commands
 
-Please set up the following bot commands. It's recommended to do this shortly before your stream so you don't impact your normal setup.
+Please set up the following bot commands. It's recommended to do this shortly before your stream so you don't impact your normal setup. The links in these commands will not show as links on GitHub, but they will in Twitch chat.
 
 * !donate - You may wish to have different donation text depending on if you are using Crowd Control or not. Both are provided here. It is recommended to make !donate or !cc an alias of the other so they both respond with the same text when using Crowd Control. If you are using Crowd Control you should locate your "Interact Link" in the Crowd Control app under "Live" in the bottom left and replace <Interact Link> with it.
   * You can donate to The Trevor Project at showciety.gives
