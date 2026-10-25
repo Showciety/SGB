@@ -143,9 +143,9 @@ Optionally set up a panel on your Twitch channel to advertise the event and prov
 	  * `panel_image_purple.png`
 	    * ![panel_image_purple.png](panel_image_purple.png)
    2. Paste one of three links into the "Image Links To:" box:
-     * "https://showciety.gives/" to go directly to our donation page
-	 * "https://tiltify.com/+super-mario-showciety/showciety-gives-back-2026" to go to the campaign page
-	 * Your Crowd Control "Interact Link". You can get this in the Crowd Control app under "Live" on the bottom left.
+      * "https://showciety.gives/" to go directly to our donation page
+	  * "https://tiltify.com/+super-mario-showciety/showciety-gives-back-2026" to go to the campaign page
+	  * Your Crowd Control "Interact Link". You can get this in the Crowd Control app under "Live" on the bottom left.
    2. Click "Submit"
 ## Tiltify Extension
 Tiltify has great instructions for adding their extension to your panels: https://info.tiltify.com/support/solutions/articles/43000365921-integrating-tiltify-fundraising-extension-on-twitch#Adding-the-Extension-to-your-channel
