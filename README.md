@@ -2,7 +2,11 @@
 
 Here's some instructions for getting ready for the Showciety Gives Back 2026 charity event benefitting The Trevor Project! These instructions are geared towards Windows builds of OBS Studio. They will likely work on other Operating Systems, but may not line up exactly. We also provide some limited instructions for using SLOBS. We will do our best to help if you post your issues in [#sgb26-troubleshooting](https://discord.com/channels/475693157720522752/1549284772923179128) no matter what operating system or streaming software you use!
 
-# Overview
+# Indirect donations
+
+To ensure absolute transparency with our viewers, to instill trust with our charity partners, and to avoid unnecessary costs and undue expectations of our streamers, the Super Mario Showciety Mod team has decided that all Streamers moving forward will only accept donations during charity events via the Tiltify platform. At no time should streamers be handling funds that are meant for our charity partners, this means that streamers shall not encourage their viewers to donate to the charity via bits, subs, or tipping to their channel. If you have any questions, please do not hesitate to reach out to a moderator via a ping or DM.
+
+# Set-Up
 
 ## Early Setup
 
@@ -15,7 +19,7 @@ These steps can be done early and should not affect your regular streams.
 5. Get to know the people before and after your slot so that you can welcome/introduce them.
 6. Get to know your coordinator a little!
 7. Please remember your time slot, show up on time and finish on time as a courtesy to the other streamers before and after your event.
-8. Optionally set up [Twitch Panels](#twitch-panels) (this may be done closer to the event if you are using an image and linking directly to https://showciety.gives/, or changed from the campaign link to the donation link closer to the event)
+8. Optionally set up [Twitch Panels](#twitch-panels) (this may be done closer to the event if you are using an image and linking directly to https://showciety.gives/, or changed from the campaign link to the donation link closer to the event) - up to your preference what you wish to do.
 
 ## Late Setup
 
@@ -25,21 +29,7 @@ You will most likely want to do these steps close to your charity stream slot as
 2. Set up bot commands for the links to the charity, donation page, etc. (see "[Bot Commands](#bot-commands)"). Optionally set up timers to periodically post the same messages automatically. Make sure there are no conflicting commands - especially for !donate and !charity! (Having a !tip command for sending you money personally is fine as long as you're not accepting money for the charity)
 3. Update your panel with the direct donation link. (OPTIONAL)
 
-# Streamlabs OBS (SLOBS) Notes
-
-SLOBS does not support importing scene collections so you will need to follow these steps:
-
-1. Install OBS Studio (https://obsproject.com/)
-2. Follow the "[Importing Scene Collection](#importing-scene-collection)" and "[Finding Missing Files](#finding-missing-files)" instructions in OBS Studio.
-3. Import that scene collection into SLOBS. Once you have imported into SLOBS you may uninstall OBS Studio if you wish.
-4. Open SLOBS.
-5. Click on the down-arrow next to "Scenes" panel heading in the bottom left
-6. Click "Manage Scene Collections"
-7. In the dialogue that opens click "Import Load existing scenes from OBS" in the top right of the dialogue
-8. Wait for it to finish importing and all your scene collections from OBS Studio should be imported! If there is more than one scene collection imported you will need to click on the "SGB26" scene collection under "Your Scene Collections:" on the left of the dialogue.
-9. Click "Close" on the "Manage Scene Collections" dialogue and start "[Required Customizations](#required-customizations)"!
-
-# Stream Setup
+# Streaming Software Setup
 
 This zip file contains the scene collection "SGB26.json" (for import into OBS), image assets, the font used for the text sources, music assets and anything else you may need. The assumed canvas size is 1920x1080. If you would like to use a 1280x720 canvas size you will need to make your own modifications or use a 1080p canvas and rescale stream/output resolution to 720p.
 
@@ -105,7 +95,30 @@ You are not limited to ONLY these changes! These are here to give you an idea of
 * Chat overlay (optional)
 * Subtitles (optional)
 
-### Bot Commands
+## Finalization
+
+Do a test recording or stream, try all the scenes, test your alerts, test your chat commands, speak a bit and try to play the game to make sure audio is working correctly! Ping an @Mod to send a test donation alert. Make sure the audio is working correctly.
+
+After a test recording or stream run your OBS log through the [OBS Log Analyzer](https://obsproject.com/tools/analyzer) to highlight any issues!
+
+### Please create a thread and ping "@SGB26 Planning Team" with a screenshot or recording of any scenes you plan to use in [#sgb26-overlay-approval](https://discord.com/channels/475693157720522752/1562688927503097866) and someone from the planning team will give it a once-over, let you know if there are any issues or approve it once it looks good.
+
+# Streamlabs OBS (SLOBS) Notes
+
+SLOBS does not support importing scene collections so you will need to follow these steps:
+
+1. Install OBS Studio (https://obsproject.com/)
+2. Follow the "[Importing Scene Collection](#importing-scene-collection)" and "[Finding Missing Files](#finding-missing-files)" instructions in OBS Studio.
+3. Open SLOBS.
+4. Click on the down-arrow next to "Scenes" panel heading in the bottom left
+5. Click "Manage Scene Collections"
+6. In the dialogue that opens click "Import Load existing scenes from OBS" in the top right of the dialogue
+7. Wait for it to finish importing and all your scene collections from OBS Studio should be imported! If there is more than one scene collection imported you will need to click on the "SGB26" scene collection under "Your Scene Collections:" on the left of the dialogue.
+8. Click "Close" on the "Manage Scene Collections" dialogue and start "[Required Customizations](#required-customizations)"!
+
+Once you have imported into SLOBS you may uninstall OBS Studio if you wish.
+
+# Bot Commands
 
 Please set up the following bot commands. It's recommended to do this shortly before your stream so you don't impact your normal setup. The links in these commands will not show as links on GitHub, but they will in Twitch chat.
 
@@ -118,14 +131,6 @@ Please set up the following bot commands. It's recommended to do this shortly be
 * !legislation - The Trevor Project's advocacy programs span the country, and include various types of legislation and education. They have passed 30 bills in the last 10 years, and have fathered 25 different movements, such as "Protecting with Pride".
 * !trevor - Did you know that one accepting adult decreases the risk of suicide by 40% for LGBTQ young people. The Trevor Project provides LGBTQ youth with 24/7 crisis counseling via phone, text, and chat. Head to thetrevorproject.org/get-help if you, or anybody you know may need help.
 * !showciety - The Super Mario Showciety is a community of Super Mario streamers, builders, viewers, and players! To get involved with the Showciety, check out our Discord discord.gg/skNMmDe and Blue Sky bsky.app/profile/showciety.org Thanks for your support!
-
-## Finalization
-
-Do a test recording or stream, try all the scenes, test your alerts, test your chat commands, speak a bit and try to play the game to make sure audio is working correctly! Ping an @Mod to send a test donation alert. Make sure the audio is working correctly.
-
-After a test recording or stream run your OBS log through the [OBS Log Analyzer](https://obsproject.com/tools/analyzer) to highlight any issues!
-
-### Please create a thread and ping "@SGB26 Planning Team" with a screenshot or recording of any scenes you plan to use in [#sgb26-overlay-approval](https://discord.com/channels/475693157720522752/1562688927503097866) and someone from the planning team will give it a once-over, let you know if there are any issues or approve it once it looks good.
 
 # Twitch Panels
 There are two options for setting up panels for the event:
@@ -179,10 +184,6 @@ When you have confirmation that the next person on the [schedule](https://horaro
 ### Please do your absolute best to start and end on time out of respect to the other streamers participating in the event. Nobody wants their time cut short or to have to vamp for extended periods. That being said sometimes there are emergencies outside of your control so try to be accommodating if you can.
 
 ### If you are unable to stream for your time slot please let coordinators and your backup streamer know ASAP so they have some time to prepare
-
-# Indirect donations
-
-To ensure absolute transparency with our viewers, to instill trust with our charity partners, and to avoid unnecessary costs and undue expectations of our streamers, the Super Mario Showciety Mod team has decided that all Streamers moving forward will only accept donations during charity events via the Tiltify platform. At no time should streamers be handling funds that are meant for our charity partners, this means that streamers shall not encourage their viewers to donate to the charity via bits, subs, or tipping to their channel. If you have any questions, please do not hesitate to reach out to a moderator via a ping or DM.
 
 # Crowd Control
 
