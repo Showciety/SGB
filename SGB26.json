@@ -275,22 +275,13 @@
                     "websocketConnectionTab": 16
                 },
                 {
-                    "httpServerTab": 17
+                    "macroScheduleTab": 17
                 },
                 {
-                    "macroScheduleTab": 18
+                    "actionQueueTab": 18
                 },
                 {
-                    "mqttConnectionTab": 19
-                },
-                {
-                    "twitchConnectionTab": 20
-                },
-                {
-                    "actionQueueTab": 21
-                },
-                {
-                    "variableTab": 22
+                    "variableTab": 19
                 }
             ],
             "saveWindowGeo": false,
@@ -333,10 +324,7 @@
             },
             "addVariablesDock": false,
             "websocketConnections": [],
-            "httpServers": [],
             "macroScheduleEntries": [],
-            "mqttConnections": [],
-            "twitchConnections": [],
             "dockWindows": {
                 "docks": []
             },
@@ -346,7 +334,7 @@
     "version": 1,
     "sources": [
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Background Music Source",
             "uuid": "1f70b7f4-4f72-488a-ae09-78ac47ab87b5",
             "id": "ffmpeg_source",
@@ -371,6 +359,8 @@
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.unmute": [],
+                "libobs.monitor-on": [],
+                "libobs.monitor-off": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "MediaSource.Restart": [],
@@ -381,10 +371,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 2,
+            "monitoring_enabled": true,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Background Source",
             "uuid": "4f62e304-2f3f-49e3-9bc5-06f0d7d92339",
             "id": "image_source",
@@ -408,10 +399,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "BRB Scene",
             "uuid": "4e2bfa98-5cbc-4ade-9757-a8fdc3d4298a",
             "id": "scene",
@@ -644,11 +636,12 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Capture Card Source",
             "uuid": "e1547ae0-f58c-486d-836b-bb3a7a7c79a0",
             "id": "dshow_input",
@@ -676,16 +669,19 @@
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.unmute": [],
+                "libobs.monitor-on": [],
+                "libobs.monitor-off": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Charity Alerts Source",
             "uuid": "e984c372-cd1b-421b-86b3-9cdc39d10710",
             "id": "browser_source",
@@ -711,6 +707,8 @@
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.unmute": [],
+                "libobs.monitor-on": [],
+                "libobs.monitor-off": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "ObsBrowser.Refresh": []
@@ -718,10 +716,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 2,
+            "monitoring_enabled": true,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Commands 16:9 Source",
             "uuid": "03c4e7e9-bca6-4995-945d-f07532da6d17",
             "id": "text_gdiplus",
@@ -753,10 +752,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {},
             "filters": [
                 {
-                    "prev_ver": 536936450,
+                    "prev_ver": 553648128,
                     "name": "Scroll",
                     "uuid": "c2947897-32d4-4570-81e9-464213f0dfe1",
                     "id": "scroll_filter",
@@ -781,12 +781,13 @@
                     "deinterlace_mode": 0,
                     "deinterlace_field_order": 0,
                     "monitoring_type": 0,
+                    "monitoring_enabled": false,
                     "private_settings": {}
                 }
             ]
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Commands 4:3 Source",
             "uuid": "006ff646-8d31-41e9-b5d4-3c910f391bf2",
             "id": "text_gdiplus",
@@ -818,10 +819,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {},
             "filters": [
                 {
-                    "prev_ver": 536936450,
+                    "prev_ver": 553648128,
                     "name": "Scroll",
                     "uuid": "a206ef86-fd28-455f-a4c3-1cc223c03984",
                     "id": "scroll_filter",
@@ -846,12 +848,13 @@
                     "deinterlace_mode": 0,
                     "deinterlace_field_order": 0,
                     "monitoring_type": 0,
+                    "monitoring_enabled": false,
                     "private_settings": {}
                 }
             ]
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Commands 8:7 Source",
             "uuid": "25d1589e-f8a5-4f25-bcf9-da9d0888a0b2",
             "id": "text_gdiplus",
@@ -883,10 +886,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {},
             "filters": [
                 {
-                    "prev_ver": 536936450,
+                    "prev_ver": 553648128,
                     "name": "Scroll",
                     "uuid": "40eaf9b1-13e0-4dbe-8f08-93cee12b4f31",
                     "id": "scroll_filter",
@@ -911,12 +915,13 @@
                     "deinterlace_mode": 0,
                     "deinterlace_field_order": 0,
                     "monitoring_type": 0,
+                    "monitoring_enabled": false,
                     "private_settings": {}
                 }
             ]
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Crowd Control Overlay 16:9 Source",
             "uuid": "09eb23b1-21bb-4148-9806-c45ac96b95b3",
             "id": "browser_source",
@@ -941,6 +946,8 @@
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.unmute": [],
+                "libobs.monitor-on": [],
+                "libobs.monitor-off": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "ObsBrowser.Refresh": []
@@ -948,10 +955,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Crowd Control Overlay 4:3 Source",
             "uuid": "638b876b-79c2-459d-8337-7fc74ede742c",
             "id": "browser_source",
@@ -975,6 +983,8 @@
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.unmute": [],
+                "libobs.monitor-on": [],
+                "libobs.monitor-off": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "ObsBrowser.Refresh": []
@@ -982,10 +992,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Crowd Control Overlay 8:7 Source",
             "uuid": "d68027ad-0f1d-4d12-afa8-5119275e0b04",
             "id": "browser_source",
@@ -1009,6 +1020,8 @@
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.unmute": [],
+                "libobs.monitor-on": [],
+                "libobs.monitor-off": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "ObsBrowser.Refresh": []
@@ -1016,10 +1029,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Desktop Audio Source",
             "uuid": "3231b9df-9c0e-49f1-a708-8e5c8166154a",
             "id": "wasapi_output_capture",
@@ -1039,16 +1053,19 @@
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.unmute": [],
+                "libobs.monitor-on": [],
+                "libobs.monitor-off": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Display Capture Source",
             "uuid": "81e1ab09-c084-43e1-ae8c-b5a2395739e0",
             "id": "monitor_capture",
@@ -1072,10 +1089,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Ending Scene",
             "uuid": "f38d1b5c-27b8-4f13-a810-3f79dba29e8b",
             "id": "scene",
@@ -1308,11 +1326,12 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Frame 16:9 Left Source",
             "uuid": "3696fb0c-0cab-4396-826d-5eb49da0270f",
             "id": "image_source",
@@ -1335,10 +1354,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Frame 16:9 Right Source",
             "uuid": "3f7cd107-34c4-4404-bbda-9e833b50b65c",
             "id": "image_source",
@@ -1361,10 +1381,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Frame 4:3 Left Source",
             "uuid": "19e2e1e8-d4e8-4862-8884-cb670c4234fa",
             "id": "image_source",
@@ -1387,10 +1408,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Frame 4:3 Right Source",
             "uuid": "e3997aa1-54eb-4d66-ad9d-2e670117e20b",
             "id": "image_source",
@@ -1413,10 +1435,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Frame 8:7 Left Source",
             "uuid": "814e65a2-d633-4f0e-9a05-05071f445771",
             "id": "image_source",
@@ -1439,10 +1462,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Frame 8:7 Right Source",
             "uuid": "f36ad74f-f241-4562-bc2f-9f09bf49ed40",
             "id": "image_source",
@@ -1465,10 +1489,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Game Audio Source",
             "uuid": "54284517-76d5-4215-83d0-d7c378849d92",
             "id": "wasapi_process_output_capture",
@@ -1491,16 +1516,19 @@
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.unmute": [],
+                "libobs.monitor-on": [],
+                "libobs.monitor-off": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Game Capture",
             "uuid": "fd0bc44b-67fa-4983-bb1d-176de627e4df",
             "id": "game_capture",
@@ -1525,6 +1553,8 @@
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.unmute": [],
+                "libobs.monitor-on": [],
+                "libobs.monitor-off": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "hotkey_start": [],
@@ -1533,10 +1563,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Game Header Source",
             "uuid": "bd302375-0d52-4eef-8130-e3a39b125926",
             "id": "text_gdiplus",
@@ -1570,10 +1601,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Game Name 2 Source",
             "uuid": "60c5d3d0-fb54-49c1-814a-2ec70c06a82c",
             "id": "text_gdiplus",
@@ -1607,10 +1639,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Game Name Source",
             "uuid": "61b553d4-c18f-4ac3-a621-113c6b023821",
             "id": "text_gdiplus",
@@ -1644,10 +1677,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Highlight Source",
             "uuid": "f832f282-456e-4906-a7e1-2ac9f07ad40b",
             "id": "image_source",
@@ -1670,10 +1704,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Link Source",
             "uuid": "9a2b3f43-33a8-4477-a507-f0db894fb82a",
             "id": "text_gdiplus",
@@ -1711,10 +1746,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {},
             "filters": [
                 {
-                    "prev_ver": 536936450,
+                    "prev_ver": 553648128,
                     "name": "Scroll",
                     "uuid": "2f2f38f5-f661-47ef-be7c-24c83812280e",
                     "id": "scroll_filter",
@@ -1739,12 +1775,13 @@
                     "deinterlace_mode": 0,
                     "deinterlace_field_order": 0,
                     "monitoring_type": 0,
+                    "monitoring_enabled": false,
                     "private_settings": {}
                 }
             ]
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Live 16:9 Left",
             "uuid": "8beb614d-c37a-450f-88df-f590410bad20",
             "id": "scene",
@@ -2864,6 +2901,8 @@
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.35": [],
                 "libobs.hide_scene_item.35": [],
+                "libobs.show_scene_item.54": [],
+                "libobs.hide_scene_item.54": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.53": [],
@@ -2900,6 +2939,8 @@
                 "libobs.hide_scene_item.41": [],
                 "libobs.show_scene_item.23": [],
                 "libobs.hide_scene_item.23": [],
+                "libobs.show_scene_item.55": [],
+                "libobs.hide_scene_item.55": [],
                 "libobs.show_scene_item.42": [],
                 "libobs.hide_scene_item.42": [],
                 "libobs.show_scene_item.20": [],
@@ -2909,26 +2950,23 @@
                 "libobs.show_scene_item.52": [],
                 "libobs.hide_scene_item.52": [],
                 "libobs.show_scene_item.18": [],
-                "libobs.hide_scene_item.18": [],
-                "libobs.show_scene_item.54": [],
-                "libobs.hide_scene_item.54": [],
-                "libobs.show_scene_item.55": [],
-                "libobs.hide_scene_item.55": []
+                "libobs.hide_scene_item.18": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Live 16:9 Right",
             "uuid": "efe4e6f1-2f55-4ff8-9841-88b34ccf26cc",
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 32,
+                "id_counter": 33,
                 "custom_size": false,
                 "items": [
                     {
@@ -4042,6 +4080,8 @@
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.31": [],
+                "libobs.hide_scene_item.31": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.28": [],
@@ -4078,6 +4118,8 @@
                 "libobs.hide_scene_item.19": [],
                 "libobs.show_scene_item.20": [],
                 "libobs.hide_scene_item.20": [],
+                "libobs.show_scene_item.32": [],
+                "libobs.hide_scene_item.32": [],
                 "libobs.show_scene_item.21": [],
                 "libobs.hide_scene_item.21": [],
                 "libobs.show_scene_item.22": [],
@@ -4089,20 +4131,17 @@
                 "libobs.show_scene_item.25": [],
                 "libobs.hide_scene_item.25": [],
                 "libobs.show_scene_item.26": [],
-                "libobs.hide_scene_item.26": [],
-                "libobs.show_scene_item.31": [],
-                "libobs.hide_scene_item.31": [],
-                "libobs.show_scene_item.32": [],
-                "libobs.hide_scene_item.32": []
+                "libobs.hide_scene_item.26": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Live 4:3 Left",
             "uuid": "2741af15-945a-4fc0-a9a9-e23c0724b55f",
             "id": "scene",
@@ -5222,6 +5261,8 @@
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.35": [],
+                "libobs.hide_scene_item.35": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.31": [],
@@ -5271,18 +5312,17 @@
                 "libobs.show_scene_item.25": [],
                 "libobs.hide_scene_item.25": [],
                 "libobs.show_scene_item.26": [],
-                "libobs.hide_scene_item.26": [],
-                "libobs.show_scene_item.35": [],
-                "libobs.hide_scene_item.35": []
+                "libobs.hide_scene_item.26": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Live 4:3 Right",
             "uuid": "4b816cde-94d0-4143-86d3-c76ba74ce952",
             "id": "scene",
@@ -6402,6 +6442,8 @@
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.31": [],
+                "libobs.hide_scene_item.31": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.28": [],
@@ -6451,18 +6493,17 @@
                 "libobs.show_scene_item.25": [],
                 "libobs.hide_scene_item.25": [],
                 "libobs.show_scene_item.26": [],
-                "libobs.hide_scene_item.26": [],
-                "libobs.show_scene_item.31": [],
-                "libobs.hide_scene_item.31": []
+                "libobs.hide_scene_item.26": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Live 8:7 Left",
             "uuid": "6a74aac1-c59d-49b9-be41-12560797773a",
             "id": "scene",
@@ -7582,6 +7623,8 @@
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.33": [],
+                "libobs.hide_scene_item.33": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.30": [],
@@ -7618,6 +7661,8 @@
                 "libobs.hide_scene_item.19": [],
                 "libobs.show_scene_item.28": [],
                 "libobs.hide_scene_item.28": [],
+                "libobs.show_scene_item.34": [],
+                "libobs.hide_scene_item.34": [],
                 "libobs.show_scene_item.21": [],
                 "libobs.hide_scene_item.21": [],
                 "libobs.show_scene_item.22": [],
@@ -7629,20 +7674,17 @@
                 "libobs.show_scene_item.25": [],
                 "libobs.hide_scene_item.25": [],
                 "libobs.show_scene_item.26": [],
-                "libobs.hide_scene_item.26": [],
-                "libobs.show_scene_item.33": [],
-                "libobs.hide_scene_item.33": [],
-                "libobs.show_scene_item.34": [],
-                "libobs.hide_scene_item.34": []
+                "libobs.hide_scene_item.26": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Live 8:7 Right",
             "uuid": "5dc7c8ff-ea64-4bbf-ba22-88e5c760cc1f",
             "id": "scene",
@@ -8762,6 +8804,8 @@
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.31": [],
+                "libobs.hide_scene_item.31": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.28": [],
@@ -8798,6 +8842,8 @@
                 "libobs.hide_scene_item.19": [],
                 "libobs.show_scene_item.20": [],
                 "libobs.hide_scene_item.20": [],
+                "libobs.show_scene_item.32": [],
+                "libobs.hide_scene_item.32": [],
                 "libobs.show_scene_item.21": [],
                 "libobs.hide_scene_item.21": [],
                 "libobs.show_scene_item.22": [],
@@ -8809,20 +8855,17 @@
                 "libobs.show_scene_item.25": [],
                 "libobs.hide_scene_item.25": [],
                 "libobs.show_scene_item.26": [],
-                "libobs.hide_scene_item.26": [],
-                "libobs.show_scene_item.31": [],
-                "libobs.hide_scene_item.31": [],
-                "libobs.show_scene_item.32": [],
-                "libobs.hide_scene_item.32": []
+                "libobs.hide_scene_item.26": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Mic Source",
             "uuid": "9f126e3c-ad4d-41db-a886-c70ba6941c4e",
             "id": "wasapi_input_capture",
@@ -8844,16 +8887,19 @@
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.unmute": [],
+                "libobs.monitor-on": [],
+                "libobs.monitor-off": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Pronouns Source",
             "uuid": "2be58c5e-c97f-42d4-93cf-8262e9869bb9",
             "id": "text_gdiplus",
@@ -8886,10 +8932,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "SGB Title Source",
             "uuid": "8f94dcb7-ff1f-4724-b921-adf18057ac68",
             "id": "text_gdiplus",
@@ -8924,10 +8971,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Showciety Logo Source",
             "uuid": "68c4920c-4f70-4b4d-995f-293d688e4ac4",
             "id": "image_source",
@@ -8950,10 +8998,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Starting Scene",
             "uuid": "4b01c418-0896-44e2-aee8-807e8c52dc49",
             "id": "scene",
@@ -9186,11 +9235,12 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Streamer Alert Source",
             "uuid": "f946a117-bba9-46cb-a801-a153d608bc95",
             "id": "browser_source",
@@ -9216,6 +9266,8 @@
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.unmute": [],
+                "libobs.monitor-on": [],
+                "libobs.monitor-off": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "ObsBrowser.Refresh": []
@@ -9223,10 +9275,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 2,
+            "monitoring_enabled": true,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Streamer Header Source",
             "uuid": "691b3748-f114-42b1-aab1-43dc7717170f",
             "id": "text_gdiplus",
@@ -9260,10 +9313,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Streamer Name Source",
             "uuid": "00f598a0-20cb-4c48-a235-1ba21e41e7b1",
             "id": "text_gdiplus",
@@ -9297,10 +9351,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Tiltify Progress Bar Source",
             "uuid": "d14440d7-e084-4be6-aed0-661058cadcd1",
             "id": "browser_source",
@@ -9327,6 +9382,8 @@
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.unmute": [],
+                "libobs.monitor-on": [],
+                "libobs.monitor-off": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "ObsBrowser.Refresh": []
@@ -9334,10 +9391,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Trevor Project BRB Source",
             "uuid": "edf1fb8d-faad-4192-bf35-57b65e6c431f",
             "id": "image_source",
@@ -9360,10 +9418,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Trevor Project Ending Source",
             "uuid": "9698c748-eb47-4193-b6f3-a28da1021969",
             "id": "image_source",
@@ -9386,10 +9445,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Trevor Project Logo Source",
             "uuid": "d415786c-c669-44e7-b598-85bcb1a4948c",
             "id": "image_source",
@@ -9412,10 +9472,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Trevor Project Star Source",
             "uuid": "16b01a9f-aaa4-40bd-89cd-ac5f1366fd53",
             "id": "image_source",
@@ -9438,10 +9499,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Trevor Project Starting Soon Source",
             "uuid": "c2e4935c-ff43-4e22-a46c-8f469987a484",
             "id": "image_source",
@@ -9464,10 +9526,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Warning Text Source",
             "uuid": "9368ed38-86b1-4080-8fe4-4e797ac8ccfe",
             "id": "text_gdiplus",
@@ -9503,10 +9566,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 553648128,
             "name": "Webcam Source",
             "uuid": "627d9196-41be-483f-a9d1-22d16c6bf5ea",
             "id": "dshow_input",
@@ -9540,12 +9604,15 @@
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.unmute": [],
+                "libobs.monitor-on": [],
+                "libobs.monitor-off": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         }
     ]
