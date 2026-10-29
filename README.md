@@ -110,10 +110,10 @@ After a test recording or stream run your OBS log through the [OBS Log Analyzer]
 
 ## Examples
 
-![1.png](An example of the Showciety Gives Back 2026 overlay for Super Mario Sunshine)
-![2.png](An example of the Showciety Gives Back 2026 overlay for Super Mario World)
-![3.png](An example of the Showciety Gives Back 2026 overlay for Cuphead)
-![4.png](An example of the Showciety Gives Back 2026 overlay for Grand Theft Auto V)
+![An example of the Showciety Gives Back 2026 overlay for Super Mario Sunshine](1.png)
+![An example of the Showciety Gives Back 2026 overlay for Super Mario World](2.png)
+![An example of the Showciety Gives Back 2026 overlay for Cuphead](3.png)
+![An example of the Showciety Gives Back 2026 overlay for Grand Theft Auto V](4.png)
 
 # Streamlabs OBS (SLOBS) Notes
 
