@@ -30,8 +30,8 @@
             "name": "Ending Scene"
         }
     ],
-    "current_scene": "Live 16:9 Right",
-    "current_program_scene": "Live 16:9 Right",
+    "current_scene": "Ending Scene",
+    "current_program_scene": "Ending Scene",
     "canvases": [],
     "current_transition": "Fade",
     "transition_duration": 300,
@@ -69,31 +69,6 @@
         "type2": 3
     },
     "modules": {
-        "auto-scene-switcher": {
-            "interval": 300,
-            "non_matching_scene": "",
-            "switch_if_not_matching": false,
-            "active": false,
-            "switches": []
-        },
-        "captions": {
-            "source": "Mic Source",
-            "enabled": false,
-            "lang_id": 1033,
-            "provider": "mssapi"
-        },
-        "output-timer": {
-            "streamTimerHours": 0,
-            "streamTimerMinutes": 0,
-            "streamTimerSeconds": 30,
-            "recordTimerHours": 0,
-            "recordTimerMinutes": 0,
-            "recordTimerSeconds": 30,
-            "autoStartStreamTimer": false,
-            "autoStartRecordTimer": false,
-            "pauseRecordTimer": true
-        },
-        "scripts-tool": [],
         "advanced-scene-switcher": {
             "sceneGroups": [],
             "macros": [],
@@ -275,13 +250,22 @@
                     "websocketConnectionTab": 16
                 },
                 {
-                    "macroScheduleTab": 17
+                    "httpServerTab": 17
                 },
                 {
-                    "actionQueueTab": 18
+                    "macroScheduleTab": 18
                 },
                 {
-                    "variableTab": 19
+                    "mqttConnectionTab": 19
+                },
+                {
+                    "twitchConnectionTab": 20
+                },
+                {
+                    "actionQueueTab": 21
+                },
+                {
+                    "variableTab": 22
                 }
             ],
             "saveWindowGeo": false,
@@ -290,7 +274,7 @@
             "windowWidth": 0,
             "windowHeight": 0,
             "macroListMacroEditSplitterPosition": [],
-            "version": "b4a1593dc9ba6fdd21dbb9fdca74d5f18ad4aa55",
+            "version": "29e07ce63a8df145151715d971c5c788dd2ed7ef",
             "variables": [],
             "macroSearchSettings": {
                 "showAlways": false,
@@ -324,12 +308,42 @@
             },
             "addVariablesDock": false,
             "websocketConnections": [],
+            "httpServers": [],
             "macroScheduleEntries": [],
+            "mqttConnections": [],
+            "twitchConnections": [],
             "dockWindows": {
                 "docks": []
             },
             "alwaysShowTabs": false
-        }
+        },
+        "auto-scene-switcher": {
+            "interval": 300,
+            "non_matching_scene": "",
+            "switch_if_not_matching": false,
+            "active": false,
+            "switches": []
+        },
+        "captions": {
+            "source": "Mic Source",
+            "enabled": false,
+            "lang_id": 1033,
+            "provider": "mssapi"
+        },
+        "output-timer": {
+            "streamTimerHours": 0,
+            "streamTimerMinutes": 0,
+            "streamTimerSeconds": 30,
+            "recordTimerHours": 0,
+            "recordTimerMinutes": 0,
+            "recordTimerSeconds": 30,
+            "autoStartStreamTimer": false,
+            "autoStartRecordTimer": false,
+            "pauseRecordTimer": true
+        },
+        "scripts-tool": [],
+        "copyTransformHotkey": [],
+        "pasteTransformHotkey": []
     },
     "version": 1,
     "sources": [
@@ -410,7 +424,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 12,
+                "id_counter": 13,
                 "items": [
                     {
                         "name": "Background Music Source",
@@ -530,6 +544,45 @@
                         "private_settings": {}
                     },
                     {
+                        "name": "Card Showciety Logo",
+                        "source_uuid": "36ecb909-5a61-472f-9ffc-58ef08cb34e0",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "align": 2,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 13,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
                         "name": "Streamer Alert Source",
                         "source_uuid": "f946a117-bba9-46cb-a801-a153d608bc95",
                         "visible": true,
@@ -631,7 +684,9 @@
                 "libobs.show_scene_item.11": [],
                 "libobs.hide_scene_item.11": [],
                 "libobs.show_scene_item.5": [],
-                "libobs.hide_scene_item.5": []
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.13": [],
+                "libobs.hide_scene_item.13": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -647,9 +702,9 @@
             "id": "dshow_input",
             "versioned_id": "dshow_input",
             "settings": {
-                "video_device_id": "ezcap U3 capture-04:\\\\?\\usb#22vid_1bcf&pid_0b10&mi_00#229&29c5bc9&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
-                "last_video_device_id": "ezcap U3 capture-04:\\\\?\\usb#22vid_1bcf&pid_0b10&mi_00#229&29c5bc9&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
                 "buffering": 2,
+                "last_video_device_id": "ezcap U3 capture-04:\\\\?\\usb#22vid_1bcf&pid_0b10&mi_00#229&29c5bc9&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "video_device_id": "ezcap U3 capture-04:\\\\?\\usb#22vid_1bcf&pid_0b10&mi_00#229&29c5bc9&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
                 "color_space": "709",
                 "color_range": "partial",
                 "autorotation": false,
@@ -682,12 +737,39 @@
         },
         {
             "prev_ver": 553648128,
+            "name": "Card Showciety Logo",
+            "uuid": "36ecb909-5a61-472f-9ffc-58ef08cb34e0",
+            "id": "image_source",
+            "versioned_id": "image_source",
+            "settings": {
+                "file": "C:/SGB/SMS_Static_Logo_Text.png"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "monitoring_enabled": false,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 553648128,
             "name": "Charity Alerts Source",
             "uuid": "e984c372-cd1b-421b-86b3-9cdc39d10710",
             "id": "browser_source",
             "versioned_id": "browser_source",
             "settings": {
-                "url": "https://streamelements.com/overlay/6556cfcfcf396e97491ed015/wMK2TtE0UlRCqqdlW4qypkGkVyg9VbuxqkPn0SssyzyD9Mrd",
+                "url": "https://streamelements.com/overlay/68ea4081cfe6d603c49958ab/wMK2TtE0UlRCqqdlW4qypkGkVyg9VbuxqkPn0SssyzyD9Mrd",
                 "width": 1920,
                 "height": 1080,
                 "webpage_control_level": 0,
@@ -730,9 +812,9 @@
                 "text": "!donate !schedule !charity !incentives !legislation !showciety !trevor",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 48,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "outline_size": 4,
                 "outline_color": 4278190080
@@ -797,9 +879,9 @@
                 "text": "!donate !schedule !charity !incentives !legislation !showciety !trevor",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 48,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "outline_size": 4,
                 "outline_color": 4278190080
@@ -864,9 +946,9 @@
                 "text": "!donate !schedule !charity !incentives !legislation !showciety !trevor",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 48,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "outline_size": 4,
                 "outline_color": 4278190080
@@ -1100,7 +1182,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 13,
+                "id_counter": 14,
                 "items": [
                     {
                         "name": "Background Music Source",
@@ -1220,6 +1302,45 @@
                         "private_settings": {}
                     },
                     {
+                        "name": "Card Showciety Logo",
+                        "source_uuid": "36ecb909-5a61-472f-9ffc-58ef08cb34e0",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "align": 2,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 14,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
                         "name": "Streamer Alert Source",
                         "source_uuid": "f946a117-bba9-46cb-a801-a153d608bc95",
                         "visible": true,
@@ -1321,7 +1442,9 @@
                 "libobs.show_scene_item.12": [],
                 "libobs.hide_scene_item.12": [],
                 "libobs.show_scene_item.6": [],
-                "libobs.hide_scene_item.6": []
+                "libobs.hide_scene_item.6": [],
+                "libobs.show_scene_item.14": [],
+                "libobs.hide_scene_item.14": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -1577,9 +1700,9 @@
                 "text": "Game:",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 36,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "align": "right",
                 "color": 4294967295,
@@ -1615,9 +1738,9 @@
                 "text": "w/ Crowd Control",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 36,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "align": "right",
                 "color": 4294967295,
@@ -1653,9 +1776,9 @@
                 "text": "Super Mario World",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 48,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "align": "right",
                 "color": 4294967295,
@@ -1714,14 +1837,14 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "showciety.gives",
-                "outline": true,
                 "extents": false,
+                "outline": true,
+                "text": "showciety.gives",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 36,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "align": "center",
                 "valign": "top",
@@ -1756,8 +1879,8 @@
                     "id": "scroll_filter",
                     "versioned_id": "scroll_filter",
                     "settings": {
-                        "speed_x": 60.0,
                         "limit_cx": true,
+                        "speed_x": 60,
                         "cx": 1408
                     },
                     "mixers": 0,
@@ -2966,8 +3089,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 33,
                 "custom_size": false,
+                "id_counter": 34,
                 "items": [
                     {
                         "name": "Mic Source",
@@ -4147,8 +4270,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 35,
                 "custom_size": false,
+                "id_counter": 35,
                 "items": [
                     {
                         "name": "Mic Source",
@@ -5328,8 +5451,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 31,
                 "custom_size": false,
+                "id_counter": 31,
                 "items": [
                     {
                         "name": "Mic Source",
@@ -6509,8 +6632,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 34,
                 "custom_size": false,
+                "id_counter": 34,
                 "items": [
                     {
                         "name": "Mic Source",
@@ -7690,8 +7813,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 32,
                 "custom_size": false,
+                "id_counter": 32,
                 "items": [
                     {
                         "name": "Mic Source",
@@ -8909,9 +9032,9 @@
                 "text": "(He/Him)",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 28,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "color": 4294967295,
                 "outline_size": 4,
@@ -8942,14 +9065,14 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v2",
             "settings": {
+                "gradient": false,
                 "outline": true,
                 "text": "Showciety Gives Back 2026",
-                "gradient": false,
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 72,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "align": "center",
                 "outline_size": 6,
@@ -9009,7 +9132,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 14,
+                "id_counter": 15,
                 "items": [
                     {
                         "name": "Background Music Source",
@@ -9129,6 +9252,45 @@
                         "private_settings": {}
                     },
                     {
+                        "name": "Card Showciety Logo",
+                        "source_uuid": "36ecb909-5a61-472f-9ffc-58ef08cb34e0",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "align": 2,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 15,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
                         "name": "Streamer Alert Source",
                         "source_uuid": "f946a117-bba9-46cb-a801-a153d608bc95",
                         "visible": true,
@@ -9230,7 +9392,9 @@
                 "libobs.show_scene_item.13": [],
                 "libobs.hide_scene_item.13": [],
                 "libobs.show_scene_item.6": [],
-                "libobs.hide_scene_item.6": []
+                "libobs.hide_scene_item.6": [],
+                "libobs.show_scene_item.15": [],
+                "libobs.hide_scene_item.15": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -9290,9 +9454,9 @@
                 "undo_sname": "Streamer Name Source",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 36,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "color": 4294967295,
                 "outline_size": 4,
@@ -9324,13 +9488,13 @@
             "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": true,
-                "undo_sname": "Streamer Name Source",
                 "text": "tehgoocherer",
+                "undo_sname": "Streamer Name Source",
                 "font": {
                     "face": "Super Mario Maker 2",
-                    "style": "Regular",
+                    "flags": 0,
                     "size": 48,
-                    "flags": 0
+                    "style": "Regular"
                 },
                 "color": 4294967295,
                 "outline_size": 6,
@@ -9537,8 +9701,8 @@
             "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": true,
-                "undo_sname": "Warning Text Source",
                 "text": "• Please do not cheer bits, gift subs or re-sub - Please only donate via Crowd Control or showciety.gives •",
+                "undo_sname": "Warning Text Source",
                 "font": {
                     "face": "Super Mario Maker 2",
                     "flags": 0,
@@ -9576,11 +9740,11 @@
             "id": "dshow_input",
             "versioned_id": "dshow_input",
             "settings": {
-                "video_device_id": "Logitech StreamCam:\\\\?\\usb#22vid_046d&pid_0893&mi_00#229&2220bf6f&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "buffering": 2,
+                "last_resolution": "1920x1080",
                 "last_video_device_id": "Logitech StreamCam:\\\\?\\usb#22vid_046d&pid_0893&mi_00#229&2220bf6f&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
                 "resolution": "1920x1080",
-                "last_resolution": "1920x1080",
-                "buffering": 2,
+                "video_device_id": "Logitech StreamCam:\\\\?\\usb#22vid_046d&pid_0893&mi_00#229&2220bf6f&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
                 "frame_interval": 166666,
                 "res_type": 0,
                 "video_format": 400,
