@@ -19,7 +19,7 @@ These steps can be done early and should not affect your regular streams.
 5. Get to know the people before and after your slot so that you can welcome/introduce them.
 6. Get to know your coordinator a little!
 7. Please remember your time slot, show up on time and finish on time as a courtesy to the other streamers before and after your event.
-8. Optionally set up [Twitch Panels](#twitch-panels) (this may be done closer to the event if you are using an image and linking directly to https://showciety.gives/, or changed from the campaign link to the donation link closer to the event) - up to your preference what you wish to do.
+8. Set up [Twitch Panels](#twitch-panels) (this may be done closer to the event if you are using an image and linking directly to https://showciety.gives/, or changed from the campaign link to the donation link closer to the event) - up to your preference what you wish to do. (OPTIONAL)
 
 ## Late Setup
 
@@ -29,7 +29,7 @@ You will most likely want to do these steps close to your charity stream slot as
 2. Set up bot commands for the links to the charity, donation page, etc. (see "[Bot Commands](#bot-commands)"). Optionally set up timers to periodically post the same messages automatically. Make sure there are no conflicting commands - especially for !donate and !charity! (Having a !tip command for sending you money personally is fine as long as you're not accepting money for the charity)
 3. Update your panel with the direct donation link. (OPTIONAL)
 
-# Streaming Software Setup
+# OBS Studio Setup
 
 This zip file contains the scene collection "SGB26.json" (for import into OBS), image assets, the font used for the text sources, music assets and anything else you may need. The assumed canvas size is 1920x1080. If you would like to use a 1280x720 canvas size you will need to make your own modifications or use a 1080p canvas and rescale stream/output resolution to 720p.
 
@@ -43,9 +43,9 @@ To simplify the setup we've included an exported scene collection (SGB26.json). 
 
 ## Finding Missing Files
 
-Once you import the scene collection you can then click on "Scene Collection" in the top bar and select "SGB26" to load the scene collection (do not do this live as OBS may crash). You will get a dialogue titled "Missing Files" to point OBS to the location all the image and audio assets are stored. Since we've put all the files necessary in this zip file you just have to click "Search Directory..." and browse to where you extracted this to. Once all the files have a file path listed in the "New File" column you can click "Apply".
+Once you import the scene collection you can then click on "Scene Collection" in the top bar and select "SGB26" to load the scene collection (do not do this live as OBS may crash). You will get a dialogue titled "Missing Files" to point OBS to the location all the image and audio assets are stored. Since we've put all the files necessary in this zip file you just have to click "Search Directory..." and browse to where you extracted this to. Once all the files have a file path listed in the "New File" column you can click "Apply". Depending on your version you may have to do this for the Music sub-folder as well - newer versions do not traverse subdirectories.
 
-### Required Customizations
+## Required Customizations
 
 We have created six "Live" scenes called "Live 16:9 Left Scene", "Live 16:9 Right Scene", "Live 8:7 Left Scene", "Live 8:7 Right Scene", "Live 4:3 Left Scene" and "Live 4:3 Right Scene" for 16:9, 8:7 (i.e. SNES Emulator) and 4:3 (i.e. SNES hardware) games with the game on the left or right according to your preference. You can remove ones you don't plan on using and optionally rename the remaining one(s) (e.g. Naming the one scene you plan on using simply "Live Scene").
 
@@ -77,14 +77,15 @@ Depending on your setup you may need to add your own sources and/or remove all o
 
 We will try to help if you're having trouble in [#sgb26-troubleshooting](https://discord.com/channels/475693157720522752/1549284772923179128) for specific setups.
 
-### Suggested Optional Customizations
+## Suggested Optional Customizations
 
-You are not limited to ONLY these changes! These are here to give you an idea of where to start.
+You are not limited to ONLY these changes! These are only ideas to use as a jumping off point.
 
 * Resize the game to fit the game area. We've added a transform to the game sources that tries to do a good job of doing this, but it may not meet your needs. For example several emulators produce an image that is 1 pixel off the correct aspect ratio when not in full screen and Minecraft is one pixel too tall (1920x1081) when windowed for some reason. Feel free to modify them or delete them and add your own. NOTE: SLOBS does not import the transform so this will likely be required if you use SLOBS.
 * Updating the "Streamer Alert Source" with your own alert URL
 * Crop/Resize your camera, add any filters you need, etc...
 * Add audio filters to sources
+* Change "frame" and/or background images (we have provided a TON of colour variations).
 * Change starting / BRB / ending music. We have provided several audio files to choose from, but you may use your own choice of royalty-free music or set up your own custom scenes
 * Transitions
 * Picture/Rig to put in place of camera for non-camera strimmers
@@ -95,6 +96,10 @@ You are not limited to ONLY these changes! These are here to give you an idea of
 * Chat overlay (optional)
 * Subtitles (optional)
 
+## Source Copy Plugin
+
+You may find the [Source Copy Plugin](https://obsproject.com/forum/resources/source-copy.1261/) useful to copy sources from your normal scene collection to the SGB scene collection.
+
 ## Finalization
 
 Do a test recording or stream, try all the scenes, test your alerts, test your chat commands, speak a bit and try to play the game to make sure audio is working correctly! Ping an @Mod to send a test donation alert. Make sure the audio is working correctly.
@@ -102,6 +107,13 @@ Do a test recording or stream, try all the scenes, test your alerts, test your c
 After a test recording or stream run your OBS log through the [OBS Log Analyzer](https://obsproject.com/tools/analyzer) to highlight any issues!
 
 ### Please create a thread and ping "@SGB26 Planning Team" with a screenshot or recording of any scenes you plan to use in [#sgb26-overlay-approval](https://discord.com/channels/475693157720522752/1562688927503097866) and someone from the planning team will give it a once-over, let you know if there are any issues or approve it once it looks good.
+
+## Examples
+
+![1.png](An example of the Showciety Gives Back 2026 overlay for Super Mario Sunshine)
+![2.png](An example of the Showciety Gives Back 2026 overlay for Super Mario World)
+![3.png](An example of the Showciety Gives Back 2026 overlay for Cuphead)
+![4.png](An example of the Showciety Gives Back 2026 overlay for Grand Theft Auto V)
 
 # Streamlabs OBS (SLOBS) Notes
 
@@ -263,7 +275,7 @@ Here are some common donation incentives in no particular order.
     * Follow Donor on Twitter/Twitch/Youtube
     * Incentives follows (i.e. for every sub on Youtube, the streamer donates $1 to the charity)
     * Shout Donor out on Twitter
-	* Channel point rewards that make the streamer donate dollar ammounts (e.g. 1000 points for $1 dono, 10000 points for $10 dono)
+	* Channel point rewards that make the streamer donate dollar amounts (e.g. 1000 points for $1 dono, 10000 points for $10 dono)
 * Misc
     * Dance 
     * Draw a picture (extra if they choose)
