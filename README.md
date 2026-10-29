@@ -4,7 +4,7 @@ Here's some instructions for getting ready for the Showciety Gives Back 2026 cha
 
 # Indirect donations
 
-To ensure absolute transparency with our viewers, to instill trust with our charity partners, and to avoid unnecessary costs and undue expectations of our streamers, the Super Mario Showciety Mod team has decided that all Streamers moving forward will only accept donations during charity events via the Tiltify platform. At no time should streamers be handling funds that are meant for our charity partners, this means that streamers shall not encourage their viewers to donate to the charity via bits, subs, or tipping to their channel. If you have any questions, please do not hesitate to reach out to a moderator via a ping or DM.
+To ensure absolute transparency with our viewers, to instill trust with our charity partners, and to avoid unnecessary costs and undue expectations of our streamers, the Super Mario Showciety Mod team has decided that all Streamers moving forward will only accept donations during charity events via the Tiltify platform for the event. At no time should streamers be handling funds that are meant for our charity partners, this means that streamers shall not encourage their viewers to donate to the charity via bits, subs, or tipping to their channel. If you have any questions, please do not hesitate to reach out to a moderator via a ping or DM.
 
 # Set-Up
 
@@ -39,7 +39,7 @@ Before opening OBS Studio make sure to right click the SMM2 font "super-mario-ma
 
 ## Importing Scene Collection
 
-To simplify the setup we've included an exported scene collection (SGB26.json). To use this in OBS Studio click "Scene Collection" in the top menu, click Import, the import dialogue should open, click the three dots in the "Collection Path" box, select the JSON file and click the "Import" button.
+To simplify the setup we've included an exported scene collection (`SGB26.json`). To use this in OBS Studio click "Scene Collection" in the top menu, click Import, the import dialogue should open, click the three dots in the "Collection Path" box, select the JSON file and click the "Import" button.
 
 ## Finding Missing Files
 
@@ -114,6 +114,9 @@ After a test recording or stream run your OBS log through the [OBS Log Analyzer]
 ![An example of the Showciety Gives Back 2026 overlay for Super Mario World](2.png)
 ![An example of the Showciety Gives Back 2026 overlay for Cuphead](3.png)
 ![An example of the Showciety Gives Back 2026 overlay for Grand Theft Auto V](4.png)
+![An example of the Showciety Gives Back 2026 overlay for Super Mario World](5.png)
+![An example of the Showciety Gives Back 2026 overlay for Super Mario World](6.png)
+![An example of the Showciety Gives Back 2026 overlay for Jackbox Games](7.png)
 
 # Streamlabs OBS (SLOBS) Notes
 
