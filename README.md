@@ -339,3 +339,8 @@ Here are some common donation incentives in no particular order.
 # Final Notes
 
 If you are having trouble with anything we will do our best to help in the [#sgb26-troubleshooting](https://discord.com/channels/475693157720522752/1549284772923179128).
+
+# Credits
+
+liz_bean - Backgrounds, layouts, design ideas, testing, writing, proofreading, etc...
+tehgoocherer - Layouts, design, testing, proofreading, writing, etc...
