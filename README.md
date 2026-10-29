@@ -31,7 +31,7 @@ You will most likely want to do these steps close to your charity stream slot as
 
 # OBS Studio Setup
 
-This zip file contains the scene collection "SGB26.json" (for import into OBS), image assets, the font used for the text sources, music assets and anything else you may need. The assumed canvas size is 1920x1080. If you would like to use a 1280x720 canvas size you will need to make your own modifications or use a 1080p canvas and rescale stream/output resolution to 720p.
+Download the [latest release](https://github.com/Showciety/SGB/releases/latest) 'Source Code (zip)' from our github. This zip file contains the scene collection "SGB26.json" (for import into OBS), image assets, the font used for the text sources, music assets and anything else you may need. The assumed canvas size is 1920x1080. If you would like to use a 1280x720 canvas size you will need to make your own modifications or use a 1080p canvas and rescale stream/output resolution to 720p.
 
 ## Install Font
 
