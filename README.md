@@ -41,6 +41,10 @@ Before opening OBS Studio make sure to right click the SMM2 font "super-mario-ma
 
 To simplify the setup we've included an exported scene collection (`SGB26.json`). To use this in OBS Studio click "Scene Collection" in the top menu, click Import, the import dialogue should open, click the three dots in the "Collection Path" box, select the JSON file and click the "Import" button.
 
+### Mac Notes
+
+There is a source type that crashes OBS on Mac so we've exported a `SGB26_mac.json` file that doesn't include them.
+
 ## Finding Missing Files
 
 Once you import the scene collection you can then click on "Scene Collection" in the top bar and select "SGB26" to load the scene collection (do not do this live as OBS may crash). You will get a dialogue titled "Missing Files" to point OBS to the location all the image and audio assets are stored. Since we've put all the files necessary in this zip file you just have to click "Search Directory..." and browse to where you extracted this to. Once all the files have a file path listed in the "New File" column you can click "Apply". Depending on your version you may have to do this for the Music sub-folder as well - newer versions do not traverse subdirectories.
